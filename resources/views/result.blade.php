@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makna Jiwa</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="quiz.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-</head>
-<body>
-<section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
+      <link rel="stylesheet" href="style.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+       <section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
     <div class="container-xxl mx-auto p-0  position-relative header-2-1" style="font-family: 'Poppins', sans-serif">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a href="#">
@@ -71,55 +70,6 @@
           </div>
         </div>
       </nav>
-
-    <div>
-
-    <!-- quiz box -->
-    <div class="box">
-        <header>
-            <div class="title">Anxiety Test</div>
-        </header>
-        <section>
-            <div class="que_text">
-                <span>Apakah kamu merasa lebih baik setiap harinya ?</span>
-            </div>
-            <div class="option_list">
-                <div class="option">
-                    <span>Tidak Pernah</span>
-                </div>
-                <div class="option">
-                    <span>Jarang</span>
-                </div>
-                <div class="option">
-                    <span>Kadang</span>
-                </div>
-                <div class="option">
-                    <span>Sering</span>
-                </div>
-                <div class="option">
-                    <span>Sangat sering</span>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="total_que">
-                <span><p>1</p>dari<p>5</p>Pertanyaan</span>
-            </div>
-            <button class="next_btn">Lanjut</button>
-        </footer>
-    </div>
-
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="complete_text">Kamu telah menyelasaikannya. <br>
-            Silahkan tombol hasil untuk melihat solusi untuk diri anda.</div>
-        <div class="button">
-            <button class="result">Hasil</button>
-        </div>
-    </div>
-
-    <script src="js/questions.js"></script>
-    <script src="js/script.js"></script>
+    
 </body>
 </html>

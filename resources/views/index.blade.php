@@ -43,7 +43,7 @@
                 </ul>
               </div>
               <div class="modal-footer border-0 gap-3" style="padding: 2rem; padding-top: 0.75rem">
-                <button class="btn btn-fill text-white">Let Us Help You</button>
+                <a class="btn btn-fill text-white" href="#category">Let Us Help You</a>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
             </li>
           </ul>
           <div class="gap-3">
-            <button class="btn btn-fill text-white">Let Us Help You</button>
+            <a class="btn btn-fill text-white" href="#test">Let Us Help You</a>
           </div>
         </div>
       </nav>
@@ -84,9 +84,9 @@
             We’re here stand to help you win the<br>
             battle with your family.</p>
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
-              <button class="btn d-inline-flex mb-md-0 btn-try text-white">
+              <a class="btn d-inline-flex mb-md-0 btn-try text-white" href="#test">
                 Let Us Help You
-              </button>
+              </a>
             </div>
           </div>
           <!-- Right Column -->
@@ -141,7 +141,7 @@
         </div>
       </div>
 
-      <div class="category">
+      <div id="test" class="category">
       <h1 class="text-title text-center">Kategori Tes</h1>
       <div class="card-list">
             <div class="card" style="width: 18rem;">

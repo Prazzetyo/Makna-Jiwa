@@ -8,7 +8,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     </head>
     <body>
-       <section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
+    <section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
     <div class="container-xxl mx-auto p-0  position-relative header-2-1" style="font-family: 'Poppins', sans-serif">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a href="#">
@@ -98,8 +98,9 @@
         </div>
       </div>
     </div>
-  </section><section class="h-100 w-100 bg-white" style="box-sizing: border-box">
-    
+  </section>
+
+  <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
     <div class="content-2-1 container-xxl mx-auto p-0  position-relative" style="font-family: 'Poppins', sans-serif">
       <div class="text-center title-text">
         <h1 class="text-title">Alur Tes Kesehatan Mental</h1>
@@ -210,7 +211,9 @@
         </div>
     </div>
     </div>
-  </section><section class="h-100 w-100 bg-white" style="box-sizing: border-box;">
+  </section>
+  
+  <section class="h-100 w-100 bg-white" style="box-sizing: border-box;">
     
     <div class="content-3-1 container-xxl mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
       <div class="d-flex flex-lg-row flex-column align-items-center">
@@ -259,7 +262,9 @@
         </div>
       </div>
     </div>
-  </section><section class="h-100 w-100 bg-white" style="box-sizing: border-box">
+  </section>
+
+  <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
 
 		<div class="footer-2-1 container-xxl mx-auto position-relative p-0" style="font-family: 'Poppins', sans-serif">
 			<div class="list-footer">

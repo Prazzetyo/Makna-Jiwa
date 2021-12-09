@@ -151,7 +151,7 @@
                     <h5 class="card-title">Anxiety Test</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             </p>
-                    <a href="#" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/1')}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -160,7 +160,7 @@
                     <h5 class="card-title">Depression Test</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             </p>
-                    <a href="#" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/2')}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -169,7 +169,7 @@
                     <h5 class="card-title">Stress Test</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             </p>
-                    <a href="#" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/3')}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -178,7 +178,7 @@
                     <h5 class="card-title">Bipolar Test</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             </p>
-                    <a href="#" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/4')}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -187,7 +187,7 @@
                     <h5 class="card-title">PTSD Test</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             </p>
-                    <a href="#" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/5')}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -196,7 +196,7 @@
                     <h5 class="card-title">OCD Test</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             </p>
-                    <a href="#" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/6')}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -205,7 +205,7 @@
                     <h5 class="card-title">Depression Test</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             </p>
-                    <a href="#" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/7')}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
         </div>

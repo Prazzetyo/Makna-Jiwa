@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makna Jiwa</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="quiz.css"/>
+    <link rel="stylesheet" href="{{ asset('style.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('quiz.css') }}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
@@ -15,7 +15,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <a href="#">
           <img style="margin-right: 0.75rem"
-            src="./img/logo.png" alt="" />
+            src="{{ asset('img/logo.png')}}" alt="" />
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
           <span class="navbar-toggler-icon"></span>
@@ -80,36 +80,39 @@
             <div class="title">Anxiety Test</div>
         </header>
         <section>
+          @foreach ($body->data as $quiz)
             <div class="que_text">
-                <span>Apakah kamu merasa lebih baik setiap harinya ?</span>
+                <span>{{$quiz->soal}}</span>
             </div>
             <div class="option_list">
-                <div class="option">
-                    <span>Tidak Pernah</span>
+                <div class="option form-check-inline ms-5">
+                  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option1">{{$quiz->opsi_a}}</label>
                 </div>
-                <div class="option">
-                    <span>Jarang</span>
+                <div class="option form-check-inline">
+                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option2">{{$quiz->opsi_b}}</label>
                 </div>
-                <div class="option">
-                    <span>Kadang</span>
+                <div class="option form-check-inline">
+                  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option3">{{$quiz->opsi_c}}</label>
                 </div>
-                <div class="option">
-                    <span>Sering</span>
+                <div class="option form-check-inline">
+                  <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option4">{{$quiz->opsi_d}}</label>
                 </div>
-                <div class="option">
-                    <span>Sangat sering</span>
+                <div class="option form-check-inline">
+                  <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option5">{{$quiz->opsi_e}}</label>
                 </div>
-            </div>
+            </div>  
+            @endforeach
         </section>
 
         <footer>
-            <div class="total_que">
-                <span><p>1</p>dari<p>5</p>Pertanyaan</span>
-            </div>
-            <button class="next_btn">Lanjut</button>
+            <button class="next_btn">Submit</button>
         </footer>
     </div>
-
     <!-- Result Box -->
     <div class="result_box">
         <div class="complete_text">Kamu telah menyelasaikannya. <br>
@@ -120,6 +123,6 @@
     </div>
 
     <script src="js/questions.js"></script>
-    <script src="js/script.js"></script>
+    <script src="{{ asset('script.js')}}"></script>
 </body>
 </html>

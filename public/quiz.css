@@ -19,18 +19,18 @@ body{
 .box,
 .result_box{
     position: absolute;
-    margin: 0 0 0 22%;
+    margin: 0 0 0 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.box.activeQuiz,
+/* .box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
     z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
-}
+} */
 
 .box header{
     position: relative;
@@ -62,10 +62,10 @@ section .que_text{
 
 section .option_list{
     padding: 20px 0px;
-    display: block;   
+    display: block;  
 }
 
-section .option_list .option{
+/* section .option_list .option{
     background: aliceblue;
     border: 1px solid #84c5fe;
     border-radius: 5px;
@@ -79,6 +79,10 @@ section .option_list .option{
     justify-content: space-between;
 }
 
+section .option {
+    text-align: start;
+}
+
 section .option_list .option:last-child{
     margin-bottom: 0px;
 }
@@ -87,7 +91,7 @@ section .option_list .option:hover{
     color: #004085;
     background: #cce5ff;
     border: 1px solid #b8daff;
-}
+} */
 
 footer{
     height: 60px;
@@ -113,6 +117,7 @@ footer .total_que span p:first-child{
 }
 
 footer button{
+    margin-left: 25rem;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;

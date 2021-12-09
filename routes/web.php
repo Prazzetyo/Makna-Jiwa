@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('result');
-});
+Route::get('/', 'Controller@index');
+
+Route::get('/quiz/{id_kategori}', 'ControllerQuiz');

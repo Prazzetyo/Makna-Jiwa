@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makna Jiwa</title>
     <link rel="stylesheet" href="{{ asset('style.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('quiz.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('detail.css') }}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
@@ -71,58 +71,9 @@
           </div>
         </div>
       </nav>
-
     <div>
+</section>
 
-    <!-- quiz box -->
-    <div class="box">
-        <header>
-            <div class="title">Anxiety Test</div>
-        </header>
-        <section>
-          @foreach ($body->data as $quiz)
-            <div class="que_text">
-                <span>{{$quiz->no_soal}}. {{$quiz->soal}}</span>
-            </div>
-            <div class="option_list">
-                <div class="option form-check-inline ms-5">
-                  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option1">{{$quiz->opsi_a}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option2">{{$quiz->opsi_b}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option3">{{$quiz->opsi_c}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option4">{{$quiz->opsi_d}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option5">{{$quiz->opsi_e}}</label>
-                </div>
-            </div>  
-            @endforeach
-        </section>
 
-        <footer>
-            <button class="next_btn">Submit</button>
-        </footer>
-    </div>
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="complete_text">Kamu telah menyelasaikannya. <br>
-            Silahkan tombol hasil untuk melihat solusi untuk diri anda.</div>
-        <div class="button">
-            <button class="result">Hasil</button>
-        </div>
-    </div>
-
-    <script src="js/questions.js"></script>
-    <script src="{{ asset('script.js')}}"></script>
 </body>
 </html>

@@ -15,4 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Controller@index');
 
+Route::get('/blog', function(){
+    return view('blog');
+});
+
+Route::get('/empty-state', function(){
+    return view('empty-state');
+});
+
+Route::get('/detail-blog', function(){
+    return view('detail-blog');
+});
+
 Route::get('/quiz/{id_kategori}', 'ControllerQuiz');

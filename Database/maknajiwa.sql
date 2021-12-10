@@ -11,7 +11,7 @@
  Target Server Version : 100414
  File Encoding         : 65001
 
- Date: 09/12/2021 21:04:07
+ Date: 10/12/2021 20:06:34
 */
 
 SET NAMES utf8mb4;
@@ -28,16 +28,17 @@ CREATE TABLE `artikel`  (
   `gambar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `tanggal_terbit` timestamp(0) NOT NULL DEFAULT current_timestamp(0),
   `penulis` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `deskripsi_singkat` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id_artikel`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of artikel
 -- ----------------------------
-INSERT INTO `artikel` VALUES (1, 'Faktor Risiko OCD\r\n', 'Faktor risiko OCD meliputi faktor keturunan, struktur otak dan fungsinya (masih belum jelas), serta lingkungan hidup. Namun, hal yang paling memengaruhi adalah lingkungan hidup yang tidak mendukung perkembangan psikis pengidap sewaktu kecil, yaitu ketika ', '', '2021-12-09 20:10:11', 'Dwi');
-INSERT INTO `artikel` VALUES (2, 'Pengertian OCD', 'Obsessive-Compulsive Disorder (OCD) adalah sejenis gangguan mental. Orang dengan OCD memiliki pikiran dan dorongan yang tidak dapat dikendalikan dan berulang (obsesi), serta perilaku (paksaan) kompulsif. Contoh perilaku kompulsif adalah mencuci tangan 7 k', '', '2021-12-09 20:09:57', 'Farrel');
-INSERT INTO `artikel` VALUES (3, 'Penyebab', 'OCD adalah gangguan umum yang menyerang orang dewasa, remaja, dan anak-anak di seluruh dunia. Kebanyakan orang didiagnosis pada usia 19 tahun, biasanya dalam usia dini pada anak laki-laki daripada anak perempuan.\r\n\r\n', '', '2021-12-09 20:11:36', 'Ageng');
-INSERT INTO `artikel` VALUES (5, 'TESA 2', 'Ini artikel tentang tesa 2', 'default.jpeg', '2021-12-09 20:45:32', 'TESA 3');
+INSERT INTO `artikel` VALUES (1, 'Faktor Risiko OCD\r\n', 'Faktor risiko OCD meliputi faktor keturunan, struktur otak dan fungsinya (masih belum jelas), serta lingkungan hidup. Namun, hal yang paling memengaruhi adalah lingkungan hidup yang tidak mendukung perkembangan psikis pengidap sewaktu kecil, yaitu ketika ', 'https://image-cdn.medkomtek.com/sl-BjXmEziuG1UB0dCnWzbGGbco=/640x640/smart/klikdokter-media-buckets/medias/2327192/original/008572400_1636352942-Gangguan-Mental-OCD.jpg', '2021-12-09 20:10:11', 'Dwi', 'Faktor risiko OCD');
+INSERT INTO `artikel` VALUES (2, 'Pengertian OCD', 'Obsessive-Compulsive Disorder (OCD) adalah sejenis gangguan mental. Orang dengan OCD memiliki pikiran dan dorongan yang tidak dapat dikendalikan dan berulang (obsesi), serta perilaku (paksaan) kompulsif. Contoh perilaku kompulsif adalah mencuci tangan 7 k', 'https://image-cdn.medkomtek.com/sl-BjXmEziuG1UB0dCnWzbGGbco=/640x640/smart/klikdokter-media-buckets/medias/2327192/original/008572400_1636352942-Gangguan-Mental-OCD.jpg', '2021-12-09 20:09:57', 'Farrel', 'Obsessive-Compulsive Disorder (OCD) adalah sejenis gangguan mental.');
+INSERT INTO `artikel` VALUES (3, 'Penyebab', 'OCD adalah gangguan umum yang menyerang orang dewasa, remaja, dan anak-anak di seluruh dunia. Kebanyakan orang didiagnosis pada usia 19 tahun, biasanya dalam usia dini pada anak laki-laki daripada anak perempuan.\r\n\r\n', 'https://image-cdn.medkomtek.com/sl-BjXmEziuG1UB0dCnWzbGGbco=/640x640/smart/klikdokter-media-buckets/medias/2327192/original/008572400_1636352942-Gangguan-Mental-OCD.jpg', '2021-12-09 20:11:36', 'Ageng', 'OCD adalah gangguan umum yang menyerang orang dewasa, remaja, dan anak-anak di seluruh dunia.');
+INSERT INTO `artikel` VALUES (5, 'TESA 2', 'Ini artikel tentang tesa 2', 'https://image-cdn.medkomtek.com/sl-BjXmEziuG1UB0dCnWzbGGbco=/640x640/smart/klikdokter-media-buckets/medias/2327192/original/008572400_1636352942-Gangguan-Mental-OCD.jpg', '2021-12-09 20:45:32', 'TESA 3', 'Ini artikel tentang tesa 2');
 
 -- ----------------------------
 -- Table structure for kategori
@@ -133,12 +134,13 @@ CREATE TABLE `solusi`  (
   `solusi` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `hasil` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id_solusi`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of solusi
 -- ----------------------------
 INSERT INTO `solusi` VALUES (1, '1', 'Sebaiknya kamu begini...', '20');
+INSERT INTO `solusi` VALUES (2, '1', 'Sebaiknya kamu begini ', '30');
 
 -- ----------------------------
 -- Table structure for tes_hasil

@@ -86,24 +86,24 @@
             </div>
             <div class="option_list">
                 <div class="option form-check-inline ms-5">
-                  <input value=1 type="radio" class="btn-check" name="options_{{$quiz->id}}" id="option1_{{$quiz->id}}" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option1_{{$quiz->id}}">{{$quiz->opsi_a}}</label>
+                  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option1">{{$quiz->opsi_a}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input value=2 type="radio" class="btn-check" name="options_{{$quiz->id}}" id="option2_{{$quiz->id}}" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option2_{{$quiz->id}}">{{$quiz->opsi_b}}</label>
+                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option2">{{$quiz->opsi_b}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input value=3 type="radio" class="btn-check" name="options_{{$quiz->id}}" id="option3_{{$quiz->id}}" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option3_{{$quiz->id}}">{{$quiz->opsi_c}}</label>
+                  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option3">{{$quiz->opsi_c}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input value=4 type="radio" class="btn-check" name="options_{{$quiz->id}}" id="option4_{{$quiz->id}}" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option4_{{$quiz->id}}">{{$quiz->opsi_d}}</label>
+                  <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option4">{{$quiz->opsi_d}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input value=5 type="radio" class="btn-check" name="options_{{$quiz->id}}" id="option5_{{$quiz->id}}" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option5_{{$quiz->id}}">{{$quiz->opsi_e}}</label>
+                  <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                  <label class="btn btn-outline-success" for="option5">{{$quiz->opsi_e}}</label>
                 </div>
             </div>  
             @endforeach
@@ -122,7 +122,7 @@
         </div>
     </div>
 
-    <!-- <script src="js/questions.js"></script>
-    <script src="{{ asset('script.js')}}"></script> -->
+    <script src="js/questions.js"></script>
+    <script src="{{ asset('script.js')}}"></script>
 </body>
 </html>

@@ -72,6 +72,32 @@
         </div>
       </nav>
     <div>
+
+      <div class="container">
+        @foreach ($body->data as $blog)
+        <div class="cs-blog-detail">
+            <div class="cs-main-post">
+                <figure><img alt="{{ $blog->judul_artikel }}" src="{{ $blog->gambar }}"></figure>
+            </div>
+            <div class="cs-post-title">
+                <div class="cs-author">
+                    <div class="cs-text">
+                        <h5>By: {{ $blog->penulis }}</h5>
+                    </div>
+                </div>
+                <div class="post-option">
+                    <span class="post-date">{{ $blog->tanggal_terbit }}</span>
+                </div>
+            </div>
+            <div class="cs-post-option-panel mt-4">
+                <div class="rich-editor-text">
+                    <p>{{ $blog->deskripsi }}</p>
+                </div>
+            </div>
+           
+        </div>
+        @endforeach
+        </div>
 </section>
 
 

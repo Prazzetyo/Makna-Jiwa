@@ -29,10 +29,10 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/login') }}">Admin</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Artikel</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/blog') }}">Daily Insights</a>
+                    <a class="nav-link" href="#">Features</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
@@ -52,10 +52,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/login') }}">Admin</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Artikel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/blog') }}">Daily Insights</a>
+              <a class="nav-link" href="#">Resources</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>

@@ -7,6 +7,7 @@
     <title>Makna Jiwa</title>
     <link rel="stylesheet" href="{{ asset('style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('blog.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/article.css') }}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
@@ -73,19 +74,21 @@
       </nav>
     <div>
 </section>
-
-<div class="blog-list">
-        <div class="blog" style="width: 18rem;">
-            <img src="./assets/image-2.jpeg" class="blog-img-top" alt="...">
-                    <div class="blog-body">
-                        <h5 class="blog-title">blog title</h5>
-                        <p class="blog-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.</p>
-                        <a href="{{ url('/detail-blog') }}" class="btn btn-primary">Go somewhere</a>
-                    </div>
-        </div>
+  <div class="container">
+    <div class="intro my-5">
+        <h2 class="text-center">Latest Articles</h2>
+        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
     </div>
+    <div class="row articles">
+      @foreach ($body->data as $article)
+        <div class="col-sm-6 col-md-4 item mt-5"><a href="#">
+            <img class="img-fluid" width="400" src="{{ $article->gambar }}"></a>
+            <h3 class="pt-3 name">By {{ $article->penulis }}</h3>
+            <p class="description">{{ $article->tanggal_terbit }}</p>           
+            <a href="{{ url('/detail-blog/'.$article->id_artikel) }}" class="btn btn-primary">Read More</a>
+        </div>
+      @endforeach
+    </div>
+  </div>
 </body>
 </html>

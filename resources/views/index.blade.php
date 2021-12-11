@@ -11,7 +11,7 @@
     <section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
     <div class="container-xxl mx-auto p-0  position-relative header-2-1" style="font-family: 'Poppins', sans-serif">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="#">
+        <a href="{{ url('/') }}">
           <img style="margin-right: 0.75rem"
             src="./img/logo.png" alt="" />
         </a>
@@ -29,13 +29,13 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Advice</a>
+                    <a class="nav-link" href="{{ url('/login') }}">Admin</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Daily Insights</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -52,13 +52,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Advice</a>
+              <a class="nav-link" href="{{ url('/login') }}">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Daily Insights</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -145,70 +145,17 @@
       <div id="test" class="category">
       <h1 class="text-title text-center">Kategori Tes</h1>
       <div class="card-list">
+          @foreach ($body->data as $category)
             <div class="card" style="width: 18rem;">
                 <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
                 <div class="card-body">
-                    <h5 class="card-title">Anxiety Test</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            </p>
-                    <a href="{{ url('/quiz/1')}}" class="btn btn-primary">Start Test</a>
+                    <h5 class="card-title">{{$category->nama}}</h5>
+                    <p class="card-text">{{$category->deskripsi}}</p>
+                    <a href="{{ url('/quiz/'.$category->id_kategori)}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <h5 class="card-title">Depression Test</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            </p>
-                    <a href="{{ url('/quiz/2')}}" class="btn btn-primary">Start Test</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <h5 class="card-title">Stress Test</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            </p>
-                    <a href="{{ url('/quiz/3')}}" class="btn btn-primary">Start Test</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <h5 class="card-title">Bipolar Test</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            </p>
-                    <a href="{{ url('/quiz/4')}}" class="btn btn-primary">Start Test</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <h5 class="card-title">PTSD Test</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            </p>
-                    <a href="{{ url('/quiz/5')}}" class="btn btn-primary">Start Test</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <h5 class="card-title">OCD Test</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            </p>
-                    <a href="{{ url('/quiz/6')}}" class="btn btn-primary">Start Test</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
-                <div class="card-body">
-                    <h5 class="card-title">Depression Test</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            </p>
-                    <a href="{{ url('/quiz/7')}}" class="btn btn-primary">Start Test</a>
-                </div>
-            </div>
-        </div>
+          @endforeach
+      </div>
     </div>
     </div>
   </section>

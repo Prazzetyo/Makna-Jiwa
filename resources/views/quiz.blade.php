@@ -31,16 +31,16 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Advice</a>
+                    <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{{ url('/') }}">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -54,16 +54,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Advice</a>
+              <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="{{ url('/') }}">About Us</a>
             </li>
           </ul>
           <div class="gap-3">
@@ -86,23 +86,23 @@
             </div>
             <div class="option_list">
                 <div class="option form-check-inline ms-5">
-                  <input type="radio" value="1" class="btn-check" name="options" id="option_{{$quiz->id}}_1">
+                  <input type="radio" value="1" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_1">
                   <label class="btn btn-outline-success" for="option_{{$quiz->id}}_1">{{$quiz->opsi_a}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="2" class="btn-check" name="options" id="option_{{$quiz->id}}_2">
+                  <input type="radio" value="2" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_2">
                   <label class="btn btn-outline-success" for="option_{{$quiz->id}}_2">{{$quiz->opsi_b}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="3" class="btn-check" name="options" id="option_{{$quiz->id}}_3">
+                  <input type="radio" value="3" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_3">
                   <label class="btn btn-outline-success" for="option_{{$quiz->id}}_3">{{$quiz->opsi_c}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="4" class="btn-check" name="options" id="option_{{$quiz->id}}_4">
+                  <input type="radio" value="4" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_4">
                   <label class="btn btn-outline-success" for="option_{{$quiz->id}}_4">{{$quiz->opsi_d}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="5" class="btn-check" name="options" id="option_{{$quiz->id}}_5">
+                  <input type="radio" value="5" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_5">
                   <label class="btn btn-outline-success" for="option_{{$quiz->id}}_5">{{$quiz->opsi_e}}</label>
                 </div>
             </div>  
@@ -110,19 +110,11 @@
         </section>
 
         <footer>
-            <button class="next_btn">Submit</button>
+          <div class="col text-center">
+            <a class="btn btn-primary" href="{{ url('/result') }}" role="button">Submit</a>
+          </div>   
         </footer>
     </div>
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="complete_text">Kamu telah menyelasaikannya. <br>
-            Silahkan tombol hasil untuk melihat solusi untuk diri anda.</div>
-        <div class="button">
-            <button class="result">Hasil</button>
-        </div>
-    </div>
 
-    <script src="js/questions.js"></script>
-    <script src="{{ asset('script.js')}}"></script>
 </body>
 </html>

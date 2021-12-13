@@ -32,13 +32,13 @@
                     <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/result') }}">Result</a>
+                    <a class="nav-link" href="{{ url('/') }}">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -55,13 +55,13 @@
               <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/result') }}">Result</a>
+              <a class="nav-link" href="{{ url('/') }}">About Us</a>
             </li>
           </ul>
           <div class="gap-3">

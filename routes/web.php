@@ -46,7 +46,7 @@ Route::get('/bookmarks', function(){
 });
 
 Route::get('/add-listing', function(){
-    return view('add');
+    return view('add-listing');
 });
 
 Route::get('/detail-blog/{id_artikel}', 'DetailBlog');

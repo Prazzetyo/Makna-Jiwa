@@ -86,24 +86,24 @@
             </div>
             <div class="option_list">
                 <div class="option form-check-inline ms-5">
-                  <input type="radio" value="1" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_a}}</label>
+                  <input type="radio" value="1" class="btn-check" name="options" id="option_{{$quiz->id}}_1">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_1">{{$quiz->opsi_a}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="2" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_b}}</label>
+                  <input type="radio" value="2" class="btn-check" name="options" id="option_{{$quiz->id}}_2">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_2">{{$quiz->opsi_b}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="3" class="btn-check" name="{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_c}}</label>
+                  <input type="radio" value="3" class="btn-check" name="options" id="option_{{$quiz->id}}_3">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_3">{{$quiz->opsi_c}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="4" class="btn-check" name="{{$quiz->id}}" id="option4">
-                  <label class="btn btn-outline-success" for="option4">{{$quiz->opsi_d}}</label>
+                  <input type="radio" value="4" class="btn-check" name="options" id="option_{{$quiz->id}}_4">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_4">{{$quiz->opsi_d}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" value="5" class="btn-check" name="{{$quiz->id}}" id="option5">
-                  <label class="btn btn-outline-success" for="option5">{{$quiz->opsi_e}}</label>
+                  <input type="radio" value="5" class="btn-check" name="options" id="option_{{$quiz->id}}_5">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_5">{{$quiz->opsi_e}}</label>
                 </div>
             </div>  
             @endforeach

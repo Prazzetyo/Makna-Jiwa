@@ -25,6 +25,10 @@ Route::get('/admin', function(){
     return view('admin');
 });
 
+Route::get('/about-us', function(){
+    return view('about-us');
+});
+
 Route::get('/messages', function(){
     return view('messages');
 });

@@ -1,0 +1,47 @@
+.blog-list {
+    padding: 1rem 1rem;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: ease-in-out 1s;
+  }
+
+  .blog {
+    padding: 0.1rem;
+    background-color: #fff7f4;
+    border-radius: 0.75rem;
+    border: 1px solid #eba08b;
+    margin: 1em;
+    transition: ease-in-out 1s;
+  }
+
+  .blog-title {
+    font: 600 1.5rem/2rem Poppins, sans-serif;
+    margin-bottom: 0.625rem;
+    color: #000000;
+  }
+
+  .blog-text {
+    font: 300 1rem/1.5rem Poppins, sans-serif;
+    color: #383838;
+    letter-spacing: 0.025em;
+    margin-bottom: 0;
+  }
+
+  .btn-blog {
+    font: 700 1rem/1.5rem Poppins, sans-serif;
+    background-color: #f1edec;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .btn-blog:hover {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }

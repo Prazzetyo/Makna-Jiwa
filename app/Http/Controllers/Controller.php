@@ -14,8 +14,14 @@ class Controller extends BaseController
 
     public function index()
     {
+        $response = Http::withHeaders([
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json'
+        ])->get('localhost/apimaknajiwa/api/category');
         
+        $body = $response->body();
+        $body = json_decode($body);
 
-        return view('index');
+        return view('index', compact('body'));
     }
 }

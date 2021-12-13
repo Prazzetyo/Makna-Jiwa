@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makna Jiwa</title>
     <link rel="stylesheet" href="{{ asset('style.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('quiz.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('blog.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/article.css') }}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
@@ -31,7 +32,7 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Advice</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Artikel</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
@@ -54,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Advice</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Artikel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Resources</a>
@@ -71,58 +72,23 @@
           </div>
         </div>
       </nav>
-
     <div>
-
-    <!-- quiz box -->
-    <div class="box">
-        <header>
-            <div class="title">Anxiety Test</div>
-        </header>
-        <section>
-          @foreach ($body->data as $quiz)
-            <div class="que_text">
-                <span>{{$quiz->no_soal}}. {{$quiz->soal}}</span>
-            </div>
-            <div class="option_list">
-                <div class="option form-check-inline ms-5">
-                  <input type="radio" value="1" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_a}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="2" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_b}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="3" class="btn-check" name="{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_c}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="4" class="btn-check" name="{{$quiz->id}}" id="option4">
-                  <label class="btn btn-outline-success" for="option4">{{$quiz->opsi_d}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="5" class="btn-check" name="{{$quiz->id}}" id="option5">
-                  <label class="btn btn-outline-success" for="option5">{{$quiz->opsi_e}}</label>
-                </div>
-            </div>  
-            @endforeach
-        </section>
-
-        <footer>
-            <button class="next_btn">Submit</button>
-        </footer>
+</section>
+  <div class="container">
+    <div class="intro my-5">
+        <h2 class="text-center">Latest Articles</h2>
+        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
     </div>
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="complete_text">Kamu telah menyelasaikannya. <br>
-            Silahkan tombol hasil untuk melihat solusi untuk diri anda.</div>
-        <div class="button">
-            <button class="result">Hasil</button>
+    <div class="row articles">
+      @foreach ($body->data as $article)
+        <div class="col-sm-6 col-md-4 item mt-5"><a href="#">
+            <img class="img-fluid" width="400" src="{{ $article->gambar }}"></a>
+            <h3 class="pt-3 name">By {{ $article->penulis }}</h3>
+            <p class="description">{{ $article->tanggal_terbit }}</p>           
+            <a href="{{ url('/detail-blog/'.$article->id_artikel) }}" class="btn btn-primary">Read More</a>
         </div>
+      @endforeach
     </div>
-
-    <script src="js/questions.js"></script>
-    <script src="{{ asset('script.js')}}"></script>
+  </div>
 </body>
 </html>

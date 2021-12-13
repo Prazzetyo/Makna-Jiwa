@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makna Jiwa</title>
     <link rel="stylesheet" href="{{ asset('style.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('quiz.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('detail.css') }}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
@@ -71,58 +71,35 @@
           </div>
         </div>
       </nav>
-
     <div>
 
-    <!-- quiz box -->
-    <div class="box">
-        <header>
-            <div class="title">Anxiety Test</div>
-        </header>
-        <section>
-          @foreach ($body->data as $quiz)
-            <div class="que_text">
-                <span>{{$quiz->no_soal}}. {{$quiz->soal}}</span>
+      <div class="container">
+        @foreach ($body->data as $blog)
+        <div class="cs-blog-detail">
+            <div class="cs-main-post">
+                <figure><img alt="{{ $blog->judul_artikel }}" src="{{ $blog->gambar }}"></figure>
             </div>
-            <div class="option_list">
-                <div class="option form-check-inline ms-5">
-                  <input type="radio" value="1" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_a}}</label>
+            <div class="cs-post-title">
+                <div class="cs-author">
+                    <div class="cs-text">
+                        <h5>By: {{ $blog->penulis }}</h5>
+                    </div>
                 </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="2" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_b}}</label>
+                <div class="post-option">
+                    <span class="post-date">{{ $blog->tanggal_terbit }}</span>
                 </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="3" class="btn-check" name="{{$quiz->id}}" id="option_{{$quiz->id}}">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}">{{$quiz->opsi_c}}</label>
+            </div>
+            <div class="cs-post-option-panel mt-4">
+                <div class="rich-editor-text">
+                    <p>{{ $blog->deskripsi }}</p>
                 </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="4" class="btn-check" name="{{$quiz->id}}" id="option4">
-                  <label class="btn btn-outline-success" for="option4">{{$quiz->opsi_d}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="5" class="btn-check" name="{{$quiz->id}}" id="option5">
-                  <label class="btn btn-outline-success" for="option5">{{$quiz->opsi_e}}</label>
-                </div>
-            </div>  
-            @endforeach
-        </section>
-
-        <footer>
-            <button class="next_btn">Submit</button>
-        </footer>
-    </div>
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="complete_text">Kamu telah menyelasaikannya. <br>
-            Silahkan tombol hasil untuk melihat solusi untuk diri anda.</div>
-        <div class="button">
-            <button class="result">Hasil</button>
+            </div>
+           
         </div>
-    </div>
+        @endforeach
+        </div>
+</section>
 
-    <script src="js/questions.js"></script>
-    <script src="{{ asset('script.js')}}"></script>
+
 </body>
 </html>

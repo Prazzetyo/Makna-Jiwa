@@ -87,7 +87,8 @@
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
               <a class="btn d-inline-flex mb-md-0 btn-try text-white" href="#test">
                 Let Us Help You
-              </a>
+              </a><br>
+              <iframe class="spotify rounded-3" src="https://open.spotify.com/embed/playlist/71019EDcRamfMmOEEoTdEu" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
           </div>
           <!-- Right Column -->
@@ -202,8 +203,8 @@
             </li>
             <li style="margin-bottom: 1rem" aria-level="1">
               <p class="text-caption">
-                Setelah semua pertanyaan diisi dengan lengkap, hasil dikirim <br class="d-sm-inline d-none" />
-                melalui email dalam bentuk report card. Mohon ditunggu, ya!
+                Setelah semua pertanyaan diisi dengan lengkap, hasil akan <br class="d-sm-inline d-none" />
+                muncul di halaman. Mohon ditunggu, ya!
               </p>
             </li>
         </ol>
@@ -250,17 +251,8 @@
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<h2 class="footer-text-title">DIDUKUNG OLEH</h2>
-						<nav class="list-unstyled">
-							<li class="list-space">
-								<a href="" class="list-menu">Getting Started</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Help Center</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Server Status</a>
-							</li>
-						</nav>
+            <img src="./img/dicoding.png" alt="" class="supported">
+						<img src="./img/MASTER.png" alt="" class="supported">
 					</div>
 				</div>
 			</div>

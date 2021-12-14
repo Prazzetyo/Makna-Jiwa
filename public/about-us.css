@@ -88,6 +88,7 @@
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
+        margin-bottom: 2rem;
       }
       
       .fa:hover {
@@ -233,9 +234,9 @@
       }
 
       .content-3-1 .img-hero {
-        width: 100%;
+        width: 80%;
         margin-bottom: 3rem;
-        margin-left: 5rem;
+        margin-left: 2rem;
       }
 
       .content-3-1 .right-col {

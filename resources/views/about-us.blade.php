@@ -108,7 +108,7 @@
         <!-- Left Column -->
         <div class="img-hero text-center justify-content-center d-flex">
           <img id="hero" class="img-fluid rounded-circle"
-            src="./img/farrel.jpg"
+            src="./img/farrel.png"
             alt="" />
         </div>
 

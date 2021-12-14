@@ -120,6 +120,7 @@
               Farrel Muhammad
             </h1>
             <p class="text-capt-down">UI/UX Designer and Frontend Developer <br>
+            <img src="./img/untag.png" alt="" class="logo-kampus">
             Universitas 17 Agustus 1945 Surabaya<br>
             
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
@@ -148,11 +149,12 @@
               Muhammad Dwi Prasetyo
             </h1>
             <p class="text-capt-down">Frontend Developer and Backend Developer<br>
-            Asal Kampus<br>
+            <img src="./img/stiki.png" alt="" class="logo-kampus">
+            STIKI Malang<br>
             
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
-            <a href="https://www.instagram.com/farrelmuhammaad/" class="fa fa-instagram"></a>
-            <a href="https://www.linkedin.com/in/farrelmuhammad/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/prasetyo_dwi81/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/muhammad-dwi-prasetyo-33203721b/" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-twitter"></a>
             </div>
           </div>

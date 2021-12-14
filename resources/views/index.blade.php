@@ -228,7 +228,7 @@
 					<div class="col-lg-3 col-md-6">
 						<h2 class="footer-text-title">TENTANG KAMI</h2>
 						<p class="text-us">
-            Makna Jiwa adalah sebuah platfom kesehatan mental yang bertujuan memberikan edukasi serta meningkatkan kesadaran akan kesehatan mental di kalangan mahasiswa
+            Makna Jiwa adalah sebuah platfom kesehatan mental yang bertujuan memberikan edukasi serta meningkatkan kesadaran akan kesehatan mental di kalangan mahasiswa.
             </p>
 					</div>
 					<div class="col-lg-3 col-md-6">

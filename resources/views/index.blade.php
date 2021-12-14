@@ -3,6 +3,7 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="./img/logo-web.png">
       <title>Makna Jiwa</title>
       <link rel="stylesheet" href="{{ asset('style.css')}}"/>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -219,70 +220,36 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="">
 							<div class="list-space">
-								<img src="./img/logo.png"
+								<img src="./img/logo-footer-1.png"
 									alt="" />
 							</div>
-							<nav class="list-unstyled">
-								<li class="list-space">
-									<a href="" class="list-menu">Home</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">About</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Features</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Pricing</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Testimonial</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Help</a>
-								</li>
-							</nav>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
-						<h2 class="footer-text-title">Product</h2>
-						<nav class="list-unstyled">
-							<li class="list-space">
-								<a href="" class="list-menu">Real Time Analytic</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Easy to Operate</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Full Secured</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Analytic Tool</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Story</a>
-							</li>
-						</nav>
+						<h2 class="footer-text-title">TENTANG KAMI</h2>
+						<p class="text-us">
+            Makna Jiwa adalah sebuah platfom kesehatan mental yang bertujuan memberikan edukasi serta meningkatkan kesadaran akan kesehatan mental di kalangan mahasiswa
+            </p>
 					</div>
 					<div class="col-lg-3 col-md-6">
-						<h2 class="footer-text-title">Company</h2>
+          <h2 class="footer-text-title">LAYANAN</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
-								<a href="" class="list-menu">Contact Us</a>
+								<a href="" class="list-menu">Admin</a>
 							</li>
 							<li class="list-space">
 								<a href="" class="list-menu">Blog</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Culture</a>
+								<a href="" class="list-menu">FAQ</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Security</a>
+								<a href="" class="list-menu">About Us</a>
 							</li>
 						</nav>
 					</div>
 					<div class="col-lg-3 col-md-6">
-						<h2 class="footer-text-title">Support</h2>
+						<h2 class="footer-text-title">DIDUKUNG OLEH</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
 								<a href="" class="list-menu">Getting Started</a>

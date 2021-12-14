@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-web.png">
     <title>Makna Jiwa | About Us</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="about-us.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
@@ -72,47 +74,94 @@
         </div>
       </nav>
       
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-                <h2 class="section-title">About Us</h2>
+      <div class="mx-auto d-flex flex-lg-row flex-column hero">
+          <!-- Left Column -->
+          <div
+            class="left-col d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+            <p class="text-capt">About Us</p>
+            <h1 class="title-text-big">
+              <b>Makna Jiwa</b><br class="d-lg-block d-none" />
+              Mental Illness Platform
+            </h1>
+            <p class="text-capt-down">Platform Edukasi Kesehatan Mental <br>
+            Disini kami menyediakan berbagai fasilitas untuk penjelajah dunia maya, sebagai media edukasi seberapa pentingnya kesehatan mental dalam diri anda masing - masing.<br>
+            </p>
+            <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
+            <a href="https://www.instagram.com/farrelmuhammaad/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/farrelmuhammad/" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="right-col text-center d-flex justify-content-center pe-0">
+            <img id="img-fluid" class="h-auto mw-100 rounded-circle"
+              src="./img/selfie.png"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.png" alt="">
-                    </div>
+    <div class="content-3-1 container-xxl mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
+    <h1 class="text-title text-center">TIM KAMI</h1>  
+    <div class="d-flex flex-lg-row flex-column align-items-center">
+        <!-- Left Column -->
+        <div class="img-hero text-center justify-content-center d-flex">
+          <img id="hero" class="img-fluid rounded-circle"
+            src="./img/farrel.jpg"
+            alt="" />
+        </div>
 
-                    <div>
-                        <h2 class="about__subtitle">Farrel Muhammad Iqbal Yufi</h2>
-                        <span class="about__profession">UI/UX Designer and Frontend Developer</span>
-                        <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+        <!-- Right Column -->
+        <div
+            class="right-col d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+            <h1 class="title-text-big">
+              <b>Hello!</b>  I'm<br class="d-lg-block d-none" />
+              Farrel Muhammad
+            </h1>
+            <p class="text-capt-down">UI/UX Designer and Frontend Developer <br>
+            Universitas 17 Agustus 1945 Surabaya<br>
+            
+            <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
+            <a href="https://www.instagram.com/farrelmuhammaad/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/farrelmuhammad/" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
+      </div>
+    </div>
 
-                        <div class="about__social">
-                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div class="content-3-1 container-xxl mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
+      <div class="d-flex flex-lg-row flex-column align-items-center">
+        <!-- Left Column -->
+        <div class="img-hero text-center justify-content-center d-flex">
+          <img id="hero" class="img-fluid rounded-circle"
+            src="./img/dwi.jpg"
+            alt="" />
+        </div>
 
-            <section class="about section" id="about">
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.png" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">Muhammad Dwi Prasetyo</h2>
-                        <span class="about__profession">Frontend and Backend Developer</span>
-                        <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
-
-                        <div class="about__social">
-                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <!-- Right Column -->
+        <div
+            class="right-col d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+            <h1 class="title-text-big">
+              <b>Hello!</b>  I'm<br class="d-lg-block d-none" />
+              Muhammad Dwi Prasetyo
+            </h1>
+            <p class="text-capt-down">Frontend Developer and Backend Developer<br>
+            Asal Kampus<br>
+            
+            <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
+            <a href="https://www.instagram.com/farrelmuhammaad/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/farrelmuhammad/" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

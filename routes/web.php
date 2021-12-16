@@ -1,6 +1,13 @@
 <?php
 
+use App\Http\Controllers\Blog;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuizController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DetailBlogController;
+use App\Http\Controllers\DetailSoalController;
+use App\Http\Controllers\BlogArtikelController; //load controller post
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +20,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Controller@index');
+Route::get('/', [Controller::class, 'index']);
 
-Route::get('/blog', 'Blog@index');
+Route::get('/blog', [Blog::class, 'index']);
 
-Route::get('/empty-state', function(){
-    return view('empty-state');
+Route::get('/detail-blog/{id_artikel}', [DetailBlogController::class, '__invoke']);
+
+Route::get('/quiz/{id_kategori}', [QuizController::class, '__invoke']);
+
+Route::get('/result', function(){
+    return view('result');
 });
 
-Route::get('/detail-blog', function(){
-    return view('detail-blog');
+Route::get('/about-us', function(){
+    return view('about-us');
 });
 
-Route::get('/detail-blog/{id_artikel}', 'DetailBlog');
+Route::resource('blogartikel', BlogArtikelController::class);
 
-Route::get('/quiz/{id_kategori}', 'ControllerQuiz');
+Route::resource('categories', CategoryController::class);
+
+Route::get('/detail-soal/{id_category}', [DetailSoalController::class, '__invoke']);
+
+Route::resource('soals', DetailSoalController::class);

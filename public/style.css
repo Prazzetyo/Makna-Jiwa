@@ -451,6 +451,14 @@
 				color: #000000;
 			}
 
+      .supported {
+        padding: 0.5rem;
+        font-size: 30px;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+      }
+
 			.footer-2-1 hr.hr {
 				margin: 0;
 				border: 0;

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makna Jiwa</title>
+    <link rel="icon" href="./img/logo-web.png">
+    <title>Makna Jiwa | Quiz</title>
     <link rel="stylesheet" href="{{ asset('style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('quiz.css') }}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -31,16 +32,16 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Advice</a>
+                    <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{{ url('/') }}">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -54,16 +55,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Advice</a>
+              <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="{{ url('/') }}">About Us</a>
             </li>
           </ul>
           <div class="gap-3">
@@ -80,49 +81,44 @@
             <div class="title">Anxiety Test</div>
         </header>
         <section>
-          @foreach ($body->data as $quiz)
+          <?php $i = 1; ?>
+          @foreach ($body as $quiz)
             <div class="que_text">
-                <span>{{$quiz->no_soal}}. {{$quiz->soal}}</span>
+                <span>{{$i++}}. {{$quiz->soal}}</span>
             </div>
             <div class="option_list">
                 <div class="option form-check-inline ms-5">
-                  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option1">{{$quiz->opsi_a}}</label>
+                  <input type="radio" value="1" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_1">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_1">{{$quiz->opsi_a}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option2">{{$quiz->opsi_b}}</label>
+                  <input type="radio" value="2" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_2">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_2">{{$quiz->opsi_b}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option3">{{$quiz->opsi_c}}</label>
+                  <input type="radio" value="3" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_3">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_3">{{$quiz->opsi_c}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option4">{{$quiz->opsi_d}}</label>
+                  <input type="radio" value="4" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_4">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_4">{{$quiz->opsi_d}}</label>
                 </div>
                 <div class="option form-check-inline">
-                  <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                  <label class="btn btn-outline-success" for="option5">{{$quiz->opsi_e}}</label>
+                  <input type="radio" value="5" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_5">
+                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_5">{{$quiz->opsi_e}}</label>
                 </div>
             </div>  
             @endforeach
         </section>
 
         <footer>
-            <button class="next_btn">Submit</button>
+          <div class="col text-center">
+            <a class="btn btn-primary" href="{{ url('/result') }}" role="button">Submit</a>
+          </div>   
         </footer>
     </div>
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="complete_text">Kamu telah menyelasaikannya. <br>
-            Silahkan tombol hasil untuk melihat solusi untuk diri anda.</div>
-        <div class="button">
-            <button class="result">Hasil</button>
-        </div>
-    </div>
 
-    <script src="js/questions.js"></script>
-    <script src="{{ asset('script.js')}}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

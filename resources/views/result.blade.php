@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makna Jiwa</title>
+    <link rel="icon" href="./img/logo-web.png">
+    <title>Makna Jiwa | Result</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="result.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -13,7 +14,7 @@
 <section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
     <div class="container-xxl mx-auto p-0  position-relative header-2-1" style="font-family: 'Poppins', sans-serif">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="#">
+        <a href="{{ url('/') }}">
           <img style="margin-right: 0.75rem"
             src="./img/logo.png" alt="" />
         </a>
@@ -31,16 +32,16 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Advice</a>
+                    <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{{ url('/') }}">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -54,16 +55,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Advice</a>
+              <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="{{ url('/') }}">About Us</a>
             </li>
           </ul>
           <div class="gap-3">
@@ -85,17 +86,22 @@
             hanya indikatif dan tidak membentuk diagnosis formal.
           </p>
         </div>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+
         <div class="d-flex flex-wrap">
           <div class="mx-auto card-item position-relative">
             <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
               <h2 class="price-title">Butuh Konsultasi</h2>
               <h2 class="price-value d-flex align-items-center">
-                <span>$29</span>
-                <span class="price-duration">/Month</span>
+                <span>0 - 30</span>
+                <span class="price-duration">point</span>
               </h2>
               <p class="price-caption">
-                Suitable for those of you<br />
-                who are beginners
+                Anda termasuk dalam kategori ini<br />
+                Tanda - tandanya seperti dibawah ini :
               </p>
               <div class="price-list">
                 <p class="d-flex align-items-center check">
@@ -138,12 +144,12 @@
             <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
               <h2 class="price-title">Bisa Teratasi</h2>
               <h2 class="price-value d-flex align-items-center">
-                <span>$49</span>
-                <span class="price-duration">/Month</span>
+                <span>31 - 60</span>
+                <span class="price-duration">point</span>
               </h2>
               <p class="price-caption">
-                Suitable for those of you<br />
-                who want to grow
+                Anda termasuk dalam kategori ini<br />
+                Tanda - tandanya seperti dibawah ini :
               </p>
               <div class="price-list">
                 <p class="d-flex align-items-center check">
@@ -186,12 +192,12 @@
             <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
               <h2 class="price-title">Baik - Baik Saja</h2>
               <h2 class="price-value d-flex align-items-center">
-                <span>$49</span>
-                <span class="price-duration">/Month</span>
+                <span>61 - 100</span>
+                <span class="price-duration">point</span>
               </h2>
               <p class="price-caption">
-                Suitable for those of you<br />
-                who want to grow
+                Anda termasuk dalam kategori ini<br />
+                Tanda - tandanya seperti dibawah ini :
               </p>
               <div class="price-list">
                 <p class="d-flex align-items-center check">
@@ -250,7 +256,7 @@
 
         <!-- Right Column -->
         <div class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
-          <h2 class="title-text">Panduan Pengisian Mental Health Test</h2>
+          <h2 class="title-text">Solusi Kategori Butuh Konsultasi</h2>
           <ol class="p-0 m-0">
             <li style="margin-bottom: 1rem" aria-level="1"> 
               <p class="text-caption">
@@ -460,5 +466,7 @@
 			</div>
 		</div>
 	</section> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

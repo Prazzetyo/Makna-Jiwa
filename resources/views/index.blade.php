@@ -3,8 +3,9 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="./img/logo-web.png">
       <title>Makna Jiwa</title>
-      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="{{ asset('style.css')}}"/>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     </head>
     <body>
@@ -29,16 +30,16 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/blog') }}">Artikel</a>
+                    <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -52,16 +53,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/blog') }}">Artikel</a>
+              <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
+              <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
             </li>
           </ul>
           <div class="gap-3">
@@ -80,13 +81,14 @@
               You're <b>Not</b><br class="d-lg-block d-none" />
               Alone <b>Now.</b>
             </h1>
-            <p class="text-caption-down">Don’t fight alone for mental illness. <br>
-            We’re here stand to help you win the<br>
+            <p class="text-caption-down">Don't fight alone for mental illness. <br>
+            We're here stand to help you win the<br>
             battle with your family.</p>
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
               <a class="btn d-inline-flex mb-md-0 btn-try text-white" href="#test">
                 Let Us Help You
-              </a>
+              </a><br>
+              <iframe class="spotify rounded-3" src="https://open.spotify.com/embed/playlist/71019EDcRamfMmOEEoTdEu" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
           </div>
           <!-- Right Column -->
@@ -145,13 +147,13 @@
       <div id="test" class="category">
       <h1 class="text-title text-center">Kategori Tes</h1>
       <div class="card-list">
-          @foreach ($body->data as $category)
+          @foreach ($body as $category)
             <div class="card" style="width: 18rem;">
                 <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
                 <div class="card-body">
                     <h5 class="card-title">{{$category->nama}}</h5>
                     <p class="card-text">{{$category->deskripsi}}</p>
-                    <a href="{{ url('/quiz/'.$category->id_kategori)}}" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/'.$category->id_category)}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
           @endforeach
@@ -201,8 +203,8 @@
             </li>
             <li style="margin-bottom: 1rem" aria-level="1">
               <p class="text-caption">
-                Setelah semua pertanyaan diisi dengan lengkap, hasil dikirim <br class="d-sm-inline d-none" />
-                melalui email dalam bentuk report card. Mohon ditunggu, ya!
+                Setelah semua pertanyaan diisi dengan lengkap, hasil akan <br class="d-sm-inline d-none" />
+                muncul di halaman. Mohon ditunggu, ya!
               </p>
             </li>
         </ol>
@@ -219,81 +221,38 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="">
 							<div class="list-space">
-								<img src="./img/logo.png"
+								<img src="./img/logo-footer-1.png"
 									alt="" />
 							</div>
-							<nav class="list-unstyled">
-								<li class="list-space">
-									<a href="" class="list-menu">Home</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">About</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Features</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Pricing</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Testimonial</a>
-								</li>
-								<li class="list-space">
-									<a href="" class="list-menu">Help</a>
-								</li>
-							</nav>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
-						<h2 class="footer-text-title">Product</h2>
-						<nav class="list-unstyled">
-							<li class="list-space">
-								<a href="" class="list-menu">Real Time Analytic</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Easy to Operate</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Full Secured</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Analytic Tool</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Story</a>
-							</li>
-						</nav>
+						<h2 class="footer-text-title">TENTANG KAMI</h2>
+						<p class="text-us">
+            Makna Jiwa adalah sebuah platfom kesehatan mental yang bertujuan memberikan edukasi serta meningkatkan kesadaran akan kesehatan mental di kalangan mahasiswa.
+            </p>
 					</div>
 					<div class="col-lg-3 col-md-6">
-						<h2 class="footer-text-title">Company</h2>
+          <h2 class="footer-text-title">LAYANAN</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
-								<a href="" class="list-menu">Contact Us</a>
+								<a href="" class="list-menu">Admin</a>
 							</li>
 							<li class="list-space">
 								<a href="" class="list-menu">Blog</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Culture</a>
+								<a href="" class="list-menu">FAQ</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Security</a>
+								<a href="" class="list-menu">About Us</a>
 							</li>
 						</nav>
 					</div>
 					<div class="col-lg-3 col-md-6">
-						<h2 class="footer-text-title">Support</h2>
-						<nav class="list-unstyled">
-							<li class="list-space">
-								<a href="" class="list-menu">Getting Started</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Help Center</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Server Status</a>
-							</li>
-						</nav>
+						<h2 class="footer-text-title">DIDUKUNG OLEH</h2>
+            <img src="./img/dicoding.png" alt="" class="supported">
+						<img src="./img/MASTER.png" alt="" class="supported">
 					</div>
 				</div>
 			</div>

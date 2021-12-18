@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="result.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+      .progress-bar {
+        width: {{ $totalScore }}%;
+      }
+    </style>
 </head>
 <body>
 <section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
@@ -88,13 +93,13 @@
         </div>
 
         <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">{{ $totalScore }}%</div>
         </div>
 
         <div class="d-flex flex-wrap">
           <div class="mx-auto card-item position-relative">
             <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
-              <h2 class="price-title">Butuh Konsultasi</h2>
+              <h2 class="price-title">Baik - Baik Saja</h2>
               <h2 class="price-value d-flex align-items-center">
                 <span>0 - 30</span>
                 <span class="price-duration">point</span>
@@ -190,7 +195,7 @@
           </div>
           <div class="mx-auto card-item position-relative">
             <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
-              <h2 class="price-title">Baik - Baik Saja</h2>
+              <h2 class="price-title">Butuh Konsultasi</h2>
               <h2 class="price-value d-flex align-items-center">
                 <span>61 - 100</span>
                 <span class="price-duration">point</span>

@@ -65,7 +65,7 @@
               <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/') }}">About Us</a>
+              <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
             </li>
           </ul>
           <div class="gap-3">

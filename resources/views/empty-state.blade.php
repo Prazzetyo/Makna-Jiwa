@@ -21,7 +21,7 @@
                 Maaf Kategori Tes Belum Tersedia, Maaf Ya..<br class="d-sm-block d-none"> Tunggu Kami Di Kategori Ini.. <br class="d-sm-block d-none"><br> Silahkan Kembali Ke Halaman Utama
             </p>
             <div class="d-flex justify-content-center">
-                <a class="btn btn-back d-inline-flex text-white" href="{{ url('/index') }}">
+                <a class="btn btn-back d-inline-flex text-white" href="{{ url('/') }}">
                     Halaman Utama
                 </a>
             </div>

@@ -36,7 +36,7 @@
                     <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
+                    <a class="nav-link" href="{{ url('/empty') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
@@ -59,7 +59,7 @@
               <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
+              <a class="nav-link" href="{{ url('/empty') }}">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
@@ -149,7 +149,7 @@
       <div class="card-list">
           @foreach ($body as $category)
             <div class="card" style="width: 18rem;">
-                <!-- <img src="./assets/image-2.jpeg" class="card-img-top" alt="..."> -->
+                <img src="./img/Group 1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{$category->nama}}</h5>
                     <p class="card-text">{{$category->deskripsi}}</p>

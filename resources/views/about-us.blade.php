@@ -87,8 +87,8 @@
             Disini kami menyediakan berbagai fasilitas untuk penjelajah dunia maya, sebagai media edukasi seberapa pentingnya kesehatan mental dalam diri anda masing - masing.<br>
             </p>
             <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
-            <a href="https://www.instagram.com/farrelmuhammaad/" class="fa fa-instagram"></a>
-            <a href="https://www.linkedin.com/in/farrelmuhammad/" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-twitter"></a>
             </div>
           </div>

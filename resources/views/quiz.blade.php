@@ -38,10 +38,10 @@
                     <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/rmpty-state') }}">FAQ</a>
+                    <a class="nav-link" href="{{ url('/empty') }}">FAQ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}">About Us</a>
+                    <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -61,10 +61,10 @@
               <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/empty-state') }}">FAQ</a>
+              <a class="nav-link" href="{{ url('/empty') }}">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/') }}">About Us</a>
+              <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
             </li>
           </ul>
           <div class="gap-3">
@@ -81,41 +81,41 @@
             <div class="title">Anxiety Test</div>
         </header>
         <section>
-          <?php $i = 1; ?>
-          @foreach ($body as $quiz)
-            <div class="que_text">
-                <span>{{$i++}}. {{$quiz->soal}}</span>
-            </div>
-            <div class="option_list">
-                <div class="option form-check-inline ms-5">
-                  <input type="radio" value="1" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_1">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_1">{{$quiz->opsi_a}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="2" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_2">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_2">{{$quiz->opsi_b}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="3" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_3">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_3">{{$quiz->opsi_c}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="4" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_4">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_4">{{$quiz->opsi_d}}</label>
-                </div>
-                <div class="option form-check-inline">
-                  <input type="radio" value="5" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_5">
-                  <label class="btn btn-outline-success" for="option_{{$quiz->id}}_5">{{$quiz->opsi_e}}</label>
-                </div>
-            </div>  
+          <form action="{{ route('result.store') }}" method="post">
+            @csrf
+            <?php $i = 1; ?>
+            @foreach ($body as $quiz)
+              <div class="que_text">
+                  <span>{{$i++}}. {{$quiz->soal}}</span>
+              </div>
+              <div class="option_list">
+                  <div class="option form-check-inline ms-5">
+                    <input type="radio" value="1" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_1">
+                    <label class="btn btn-outline-success" for="option_{{$quiz->id}}_1">{{$quiz->opsi_a}}</label>
+                  </div>
+                  <div class="option form-check-inline">
+                    <input type="radio" value="2" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_2">
+                    <label class="btn btn-outline-success" for="option_{{$quiz->id}}_2">{{$quiz->opsi_b}}</label>
+                  </div>
+                  <div class="option form-check-inline">
+                    <input type="radio" value="3" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_3">
+                    <label class="btn btn-outline-success" for="option_{{$quiz->id}}_3">{{$quiz->opsi_c}}</label>
+                  </div>
+                  <div class="option form-check-inline">
+                    <input type="radio" value="4" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_4">
+                    <label class="btn btn-outline-success" for="option_{{$quiz->id}}_4">{{$quiz->opsi_d}}</label>
+                  </div>
+                  <div class="option form-check-inline">
+                    <input type="radio" value="5" class="btn-check" name="options_{{$quiz->id}}" id="option_{{$quiz->id}}_5">
+                    <label class="btn btn-outline-success" for="option_{{$quiz->id}}_5">{{$quiz->opsi_e}}</label>
+                  </div>
+              </div>  
             @endforeach
+            <div class="col text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>   
+          </form>
         </section>
-
-        <footer>
-          <div class="col text-center">
-            <a class="btn btn-primary" href="{{ url('/result') }}" role="button">Submit</a>
-          </div>   
-        </footer>
     </div>
 
 

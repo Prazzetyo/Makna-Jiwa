@@ -108,38 +108,6 @@
                 Anda termasuk dalam kategori ini<br />
                 Tanda - tandanya seperti dibawah ini :
               </p>
-              <div class="price-list">
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>Chat Support
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>Optimize Projects
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>300+ Unique Project
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>Own Analytics Platform
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>Unlimited User
-                </p>
-              </div>
               <button class="btn btn-outline d-flex justify-content-center align-items-center w-100">
                 Cek Solusi
               </button>
@@ -156,38 +124,7 @@
                 Anda termasuk dalam kategori ini<br />
                 Tanda - tandanya seperti dibawah ini :
               </p>
-              <div class="price-list">
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>Chat Support
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>Optimize Projects
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>300+ Unique Project
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>Own Analytics Platform
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>Unlimited User
-                </p>
-              </div>
+
               <button class="btn btn-outline d-flex justify-content-center align-items-center w-100">
                 Cek Solusi
               </button>
@@ -204,38 +141,7 @@
                 Anda termasuk dalam kategori ini<br />
                 Tanda - tandanya seperti dibawah ini :
               </p>
-              <div class="price-list">
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>Chat Support
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>Optimize Projects
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>300+ Unique Project
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>Own Analytics Platform
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>Unlimited User
-                </p>
-              </div>
+              
               <button class="btn btn-outline d-flex justify-content-center align-items-center w-100">
                 Cek Solusi
               </button>

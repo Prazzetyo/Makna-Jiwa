@@ -2,24 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 
 class ResultController extends Controller
 {
     public function store(Request $request)
     {
-        $answerScore = array_slice($request->all(), 1);
+        $answerScore = array_slice($request->all(), 2);
         $totalScore = 0;
         foreach ($answerScore as $score) {
             $totalScore += $score;
         }
         $totalScore /= count($answerScore);
         $totalScore *= 20;
-        return view('result', compact('totalScore'));
-    }
 
-    public function show($result)
-    {
-        return view('result');
+        $body = DB::table('solusi')->where('id_kategori', $request->category_id)->get();
+
+        return view('result', compact('totalScore','body'));
     }
 }

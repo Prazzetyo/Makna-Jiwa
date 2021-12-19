@@ -13,6 +13,9 @@ class QuizController extends Controller
         // $nama = $body[0]->nama;
 
         // return view('quiz', compact('body'), ['nama' => $nama]);
-        return view('quiz', compact('body'));
+        return view('quiz', [
+            'body' => $body,
+            'category_id' => $id,
+        ]);
     }
 }

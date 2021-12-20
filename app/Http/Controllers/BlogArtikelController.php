@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\BlogArtikel; // load BlogArtikel model
+use App\Models\BlogArtikel;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
@@ -11,12 +11,12 @@ class BlogArtikelController extends Controller
     public function index()
     {
         $artikels = BlogArtikel::latest()->get();
-        return view('artikel.index', compact('artikels'));
+        return view('artikel.index', compact('artikels'), ["title" => "Blog Artikel"]);
     }
 
     public function create()
     {
-        return view('artikel.create');
+        return view('artikel.create', ["title" => "Blog Artikel"]);
     }
 
     public function store(Request $request)
@@ -41,7 +41,7 @@ class BlogArtikelController extends Controller
             return redirect()
                 ->route('blogartikel.index')
                 ->with([
-                    'success' => 'New post has been created successfully'
+                    'success' => 'New Blog Artikel has been created successfully'
                 ]);
         } else {
             return redirect()
@@ -56,7 +56,7 @@ class BlogArtikelController extends Controller
     public function edit($id_artikel)
     {
         $post = BlogArtikel::findOrFail($id_artikel);
-        return view('artikel.edit', compact('post'));
+        return view('artikel.edit', compact('post'), ["title" => "Blog Artikel"]);
     }
 
     public function update(Request $request, $id)
@@ -83,7 +83,7 @@ class BlogArtikelController extends Controller
             return redirect()
                 ->route('blogartikel.index')
                 ->with([
-                    'success' => 'Post has been updated successfully'
+                    'success' => 'Blog Artikel has been updated successfully'
                 ]);
         } else {
             return redirect()
@@ -104,7 +104,7 @@ class BlogArtikelController extends Controller
             return redirect()
                 ->route('blogartikel.index')
                 ->with([
-                    'success' => 'Post has been deleted successfully'
+                    'success' => 'Blog Artikel has been deleted successfully'
                 ]);
         } else {
             return redirect()

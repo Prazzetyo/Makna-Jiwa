@@ -17,8 +17,9 @@ class ResultController extends Controller
         $totalScore /= count($answerScore);
         $totalScore *= 20;
 
-        $body = DB::table('solusi')->where('id_kategori', $request->category_id)->get();
-
-        return view('result', compact('totalScore','body'));
+        $body = DB::table('solusi')->where('id_kategori', $request->id_kategori)->get();
+        $solusi = DB::table('solusii')->where('id_kategori', $request->id_kategori)->get();
+        
+        return view('result', compact('totalScore', 'body', 'solusi'));
     }
 }

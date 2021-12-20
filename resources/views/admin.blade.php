@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="Ansonika">
+  <link rel="icon" href="./img/logo-web.png">
   <title>Makna Jiwa - Admin dashboard</title>
 	
   <!-- Favicons-->
@@ -50,13 +51,13 @@
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Messages">
           <a class="nav-link" href="{{ url('/messages') }}">
             <i class="fa fa-fw fa-envelope-open"></i>
-            <span class="nav-link-text">Messages</span>
+            <span class="nav-link-text">Artikel</span>
           </a>
         </li>
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Bookings">
           <a class="nav-link" href="{{ url('/bookings') }}">
             <i class="fa fa-fw fa-calendar-check-o"></i>
-            <span class="nav-link-text">Bookings</span>
+            <span class="nav-link-text">Kategori</span>
           </a>
         </li>
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="My listings">
@@ -68,33 +69,20 @@
             <li>
               <a href="{{ url('/listings') }}">Kategori 1</a>
             </li>
-			<li>
-              <a href="{{ url('/listings') }}">Kategori 2</a>
-            </li>
-			<li>
-              <a href="{{ url('/listings') }}">Kategori 3</a>
-            </li>
           </ul>
         </li>
-		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Reviews">
-          <a class="nav-link" href="{{ url('/reviews') }}">
-            <i class="fa fa-fw fa-star"></i>
-            <span class="nav-link-text">Reviews</span>
-          </a>
-        </li>
-		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Bookmarks">
-          <a class="nav-link" href="{{ url('/bookmarks') }}">
-            <i class="fa fa-fw fa-heart"></i>
-            <span class="nav-link-text">Bookmarks</span>
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add listing">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-plus-circle"></i>
+            <span class="nav-link-text">Tambah Kategori</span>
           </a>
         </li>
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add listing">
-          <a class="nav-link" href="{{ url('/add-listing') }}">
+          <a class="nav-link" href="{{ url('/soal/tambah') }}">
             <i class="fa fa-fw fa-plus-circle"></i>
             <span class="nav-link-text">Tambah Soal</span>
           </a>
         </li>
-		
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
@@ -104,18 +92,6 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <form class="form-inline my-2 my-lg-0 mr-lg-2">
-            <div class="input-group">
-              <input class="form-control search-top" type="text" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-primary" type="button">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-          </form>
-        </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
@@ -133,17 +109,6 @@
         </li>
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
-		<!-- /cards -->
-		<h2></h2>
-		<div class="box_general padding_bottom">
-			<div class="header_box version_2">
-				<h2><i class="fa fa-bar-chart"></i>Statistic</h2>
-			</div>
-		 <canvas id="myAreaChart" width="100%" height="30" style="margin:45px 0 15px 0;"></canvas>
-		</div>
-	  </div>
-	  <!-- /.container-fluid-->
-   	</div>
     <!-- /.container-wrapper-->
     <footer class="sticky-footer">
       <div class="container">

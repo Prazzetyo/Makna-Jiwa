@@ -22,7 +22,7 @@ class LoginController extends Controller
    
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('blogartikel');
+            return view('admin');
         }
   
         return back()->with('loginError', 'Login Failed! Check your username or password');

@@ -30,7 +30,7 @@
               <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
                 <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
+                    <a class="nav-link" href="{{ url('/login') }}">Admin</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
@@ -53,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
+              <a class="nav-link" href="{{ url('/login') }}">Admin</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/blog') }}">Blog</a>
@@ -153,7 +153,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{$category->nama}}</h5>
                     <p class="card-text">{{$category->deskripsi}}</p>
-                    <a href="{{ url('/quiz/'.$category->id_category)}}" class="btn btn-primary">Start Test</a>
+                    <a href="{{ url('/quiz/'.$category->id_category.'/'.$category->nama)}}" class="btn btn-primary">Start Test</a>
                 </div>
             </div>
           @endforeach
@@ -232,7 +232,7 @@
             Makna Jiwa adalah sebuah platfom kesehatan mental yang bertujuan memberikan edukasi serta meningkatkan kesadaran akan kesehatan mental di kalangan mahasiswa.
             </p>
 					</div>
-					<div class="col-lg-2 col-md-6">
+					<div class="col-lg-3 col-md-6">
           <h2 class="footer-text-title">LAYANAN</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
@@ -249,27 +249,10 @@
 							</li>
 						</nav>
 					</div>
-					<div class="col-lg-2 col-md-6">
+					<div class="col-lg-3 col-md-6">
 						<h2 class="footer-text-title">DIDUKUNG OLEH</h2>
             <img src="./img/dicoding.png" alt="" class="supported">
 						<img src="./img/MASTER.png" alt="" class="supported">
-					</div>
-          <div class="col-lg-2 col-md-6">
-						<h2 class="footer-text-title">CREDIT BY</h2>
-            <nav class="list-unstyled">
-							<li class="list-space">
-								<a class="list-menu">Buildwithangga.com</a>
-							</li>
-							<li class="list-space">
-								<a class="list-menu">Codinglabweb.com</a>
-							</li>
-							<li class="list-space">
-								<a class="list-menu">Opendoodles.com</a>
-							</li>
-							<li class="list-space">
-								<a class="list-menu">Alodokter.com</a>
-							</li>
-						</nav>
 					</div>
 				</div>
 			</div>

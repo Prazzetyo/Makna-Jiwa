@@ -28,7 +28,7 @@ Route::get('/blog', [Blog::class, 'index']);
 
 Route::get('/detail-blog/{id_artikel}', [DetailBlogController::class, '__invoke']);
 
-Route::get('/quiz/{id_kategori}', [QuizController::class, '__invoke']);
+Route::get('/quiz/{id_kategori}/{nama_kategori}', [QuizController::class, '__invoke']);
 
 Route::post('/result', [ResultController::class, 'store'])->name('result.store');
 Route::get('/result', [ResultController::class, 'show'])->name('result.show');

@@ -30,10 +30,6 @@ Route::get('/detail-blog/{id_artikel}', [DetailBlogController::class, '__invoke'
 
 Route::get('/quiz/{id_kategori}/{nama_kategori}', [QuizController::class, '__invoke']);
 
-Route::get('/soal/tambah', [DetailSoalController::class, 'addSoal']);
-
-Route::get('/soal/edit', [DetailSoalController::class, 'edit']);
-
 Route::post('/result', [ResultController::class, 'store'])->name('result.store');
 Route::get('/result', [ResultController::class, 'show'])->name('result.show');
 

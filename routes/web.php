@@ -4,11 +4,12 @@ use App\Http\Controllers\Blog;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuizController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ResultController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DetailBlogController;
 use App\Http\Controllers\DetailSoalController;
 use App\Http\Controllers\BlogArtikelController; //load controller post
-use App\Http\Controllers\ResultController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,18 +31,19 @@ Route::get('/detail-blog/{id_artikel}', [DetailBlogController::class, '__invoke'
 Route::get('/quiz/{id_kategori}', [QuizController::class, '__invoke']);
 
 Route::post('/result', [ResultController::class, 'store'])->name('result.store');
+Route::get('/result', [ResultController::class, 'show'])->name('result.show');
 
 Route::get('/about-us', function(){
     return view('about-us');
 });
 
-Route::get('/faq', function(){
-    return view('faq');
-});
-
 Route::get('/empty', function(){
     return view('empty-state');
 });
+
+Route::get('/login', [LoginController::class, 'index']);
+
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::resource('blogartikel', BlogArtikelController::class);
 

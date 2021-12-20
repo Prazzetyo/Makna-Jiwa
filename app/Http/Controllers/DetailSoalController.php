@@ -32,13 +32,13 @@ class DetailSoalController extends Controller
             $opsi_a = 'Tidak Pernah';
             $opsi_b = 'Pernah';
             $opsi_c = 'Kadang-kadang';
-            $opsi_d = 'Sering';	
+            $opsi_d = 'Sering'; 
             $opsi_e = 'Sangat Sering';
         }else if ($request->jawaban === '2') {
             $opsi_a = 'Sangat tidak setuju';
             $opsi_b = 'Tidak setuju';
             $opsi_c = 'Agak setuju';
-            $opsi_d = 'Sangat setuju';	
+            $opsi_d = 'Sangat setuju';  
             $opsi_e = '';
         }
 
@@ -56,7 +56,7 @@ class DetailSoalController extends Controller
         if ($category) {
             return redirect('/detail-soal/'.$request->id_category)
                 ->with([
-                    'success' => 'New post has been created successfully'
+                    'success' => 'New Question has been created successfully'
                 ]);
         } else {
             return redirect()
@@ -84,13 +84,13 @@ class DetailSoalController extends Controller
             $opsi_a = 'Tidak Pernah';
             $opsi_b = 'Pernah';
             $opsi_c = 'Kadang-kadang';
-            $opsi_d = 'Sering';	
+            $opsi_d = 'Sering'; 
             $opsi_e = 'Sangat Sering';
         }else if ($request->jawaban === '2') {
             $opsi_a = 'Sangat tidak setuju';
             $opsi_b = 'Tidak setuju';
             $opsi_c = 'Agak setuju';
-            $opsi_d = 'Sangat setuju';	
+            $opsi_d = 'Sangat setuju';  
             $opsi_e = '';
         }
 
@@ -108,7 +108,7 @@ class DetailSoalController extends Controller
         if ($soal) {
             return redirect('/detail-soal/'.$request->id_category)
                 ->with([
-                    'success' => 'Post has been updated successfully'
+                    'success' => 'Question has been updated successfully'
                 ]);
         } else {
             return redirect()
@@ -128,7 +128,7 @@ class DetailSoalController extends Controller
         if ($soal) {
             return redirect('/detail-soal/'.$request->id_category)
                 ->with([
-                    'success' => 'Post has been deleted successfully'
+                    'success' => 'Question has been deleted successfully'
                 ]);
         } else {
             return redirect('/detail-soal/'.$request->id_category)
@@ -136,9 +136,5 @@ class DetailSoalController extends Controller
                     'error' => 'Some problem has occurred, please try again'
                 ]);
         }
-    }
-    
-    public function addSoal(){
-        return view('soal.create');
     }
 }

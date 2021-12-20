@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category; // load Category model
+use App\Models\Category;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
@@ -11,12 +11,12 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::latest()->get();
-        return view('category.index', compact('categories'));
+        return view('category.index', compact('categories'), ["title" => "Category"]);
     }
 
     public function create()
     {
-        return view('category.create');
+        return view('category.create', ["title" => "Category"]);
     }
 
     public function store(Request $request)
@@ -35,7 +35,7 @@ class CategoryController extends Controller
             return redirect()
                 ->route('categories.index')
                 ->with([
-                    'success' => 'New post has been created successfully'
+                    'success' => 'New Category has been created successfully'
                 ]);
         } else {
             return redirect()
@@ -50,7 +50,7 @@ class CategoryController extends Controller
     public function edit($id_category)
     {
         $category = Category::findOrFail($id_category);
-        return view('category.edit', compact('category'));
+        return view('category.edit', compact('category'), ["title" => "Category"]);
     }
 
     public function update(Request $request, $id_category)
@@ -71,7 +71,7 @@ class CategoryController extends Controller
             return redirect()
                 ->route('categories.index')
                 ->with([
-                    'success' => 'Post has been updated successfully'
+                    'success' => 'Category has been updated successfully'
                 ]);
         } else {
             return redirect()
@@ -92,7 +92,7 @@ class CategoryController extends Controller
             return redirect()
                 ->route('categories.index')
                 ->with([
-                    'success' => 'Post has been deleted successfully'
+                    'success' => 'Category has been deleted successfully'
                 ]);
         } else {
             return redirect()

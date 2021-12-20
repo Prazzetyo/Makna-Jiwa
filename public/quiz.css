@@ -1,19 +1,13 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
 body{
     background: #ffffff;
 }
 
 .box{
-    position: absolute;
-    margin: 0 0 0 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -49,15 +43,5 @@ section .que_text{
 section .option_list{
     padding: 20px 0px;
     display: block;  
-}
-
-
-footer{
-    height: 60px;
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid lightgrey;
 }
 

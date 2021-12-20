@@ -11,10 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
-<section class="h-100 w-100 bg-white" style="box-sizing: border-box; ">
-    <div class="container-xxl mx-auto p-0  position-relative header-2-1" style="font-family: 'Poppins', sans-serif">
       @include('partials.navbar')
-    <div>
+      
       <div class="container">
         @foreach ($body as $blog)
         <div class="cs-blog-detail">
@@ -31,6 +29,11 @@
                     <span class="post-date">{{ $blog->created_at }}</span>
                 </div>
             </div>
+            {{-- <div class="cs-post-option-panel mt-4">
+                <div class="rich-editor-text">
+                    <p>{{ $blog->content }}</p>
+                </div>
+            </div> --}}
             {!! $blog->content !!}
            
         </div>
@@ -39,6 +42,7 @@
 </section>
 
 @include('partials.footer')
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 

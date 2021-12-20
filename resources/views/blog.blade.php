@@ -8,29 +8,34 @@
     <title>Makna Jiwa | Blog</title>
     <link rel="stylesheet" href="{{ asset('style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('blog.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/article.css') }}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
 @include('partials.navbar')
 
-</section>
-  <div class="container">
-    <div class="intro my-5">
-        <h2 class="text-center">Latest Articles</h2>
-        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+    <div class="article-top text-center">
+      <h1 class="title-text fs-1">
+        <b>Artikel ASAP</b><br class="d-lg-block d-none"/>
+      </h1>
     </div>
-    <div class="row articles">
+
+    <div class="site-container">
+      <div class="article-container">
       @foreach ($body as $article)
-        <div class="col-sm-6 col-md-4 item mt-5"><a href="#">
-            <img class="img-fluid" width="400" src="{{ $article->gambar }}"></a>
-            <h3 class="pt-3 name">By {{ $article->penulis }}</h3>
-            <p class="description">{{ $article->tanggal_terbit }}</p>           
-            <a href="{{ url('/detail-blog/'.$article->id_artikel) }}" class="btn btn-primary">Read More</a>
-        </div>
-      @endforeach
+        <article class="article-card">
+          <figure class="article-image">
+            <img src="{{ $article->gambar }}" href="{{ url('/detail-blog/'.$article->id_artikel) }}" alt="image"/>
+          </figure>
+          <div class="article-content">
+            <a href="{{ url('/detail-blog/'.$article->id_artikel) }}" class="card-category">By {{ $article->penulis }}</a>
+            <h3 class="card-title">{{ $article->judul_artikel }}</h3>
+            <p class="card-excerpt">{{ $article->deskripsi }}</p>
+          </div>
+        </article>
+        @endforeach
+      </div>
     </div>
-  </div>
+
 
   @include('partials.footer')
 

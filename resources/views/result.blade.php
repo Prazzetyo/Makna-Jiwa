@@ -8,12 +8,12 @@
     <title>Makna Jiwa | Result</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="result.css"/>
-    <link rel="stylesheet" href="{{ asset('faq.css')}}"/>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="faq.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <style>
       .progress-bar {
-        width: {{ $totalScore }}%;
+        width: {{ round($totalScore, 2) }}%;
       }
     </style>
 </head>
@@ -95,16 +95,16 @@
         </div>
 
         <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">{{ $totalScore }}%</div>
+          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">{{ round($totalScore, 2) }}%</div>
         </div>
 
-        @foreach ($body as $solusi)
         <div class="d-flex flex-wrap">
+          @foreach ($body as $result)          
           <div class="mx-auto card-item position-relative">
             <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
-              <h2 class="price-title">Baik - Baik Saja</h2>
+              <h2 class="price-title">{{$result->solusi}}</h2>
               <h2 class="price-value d-flex align-items-center">
-                <span>0 - 30</span>
+                <span>{{$result->hasil}}</span>
                 <span class="price-duration">point</span>
               </h2>
               <p class="price-caption">
@@ -112,147 +112,21 @@
                 Tanda - tandanya seperti dibawah ini :
               </p>
               <div class="price-list">
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_a}}
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_b}}
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>{{$solusi->gejala_c}}
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>{{$solusi->gejala_d}}
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>{{$solusi->gejala_e}}
-                </p>
+                @include('for_solusi')
               </div>
               <a href="#solusi" class="btn btn-outline d-flex justify-content-center align-items-center w-100">
                 Cek Solusi
               </a>
             </div>
-          </div>
-          <div class="mx-auto card-item position-relative">
-            <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
-              <h2 class="price-title">Bisa Teratasi</h2>
-              <h2 class="price-value d-flex align-items-center">
-                <span>31 - 60</span>
-                <span class="price-duration">point</span>
-              </h2>
-              <p class="price-caption">
-                Anda termasuk dalam kategori ini<br />
-                Tanda - tandanya seperti dibawah ini :
-              </p>
-              <div class="price-list">
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_a}}
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_b}}
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_c}}
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>{{$solusi->gejala_d}}
-                </p>
-                <p class="d-flex align-items-center no-check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                      alt="" /> </span>{{$solusi->gejala_e}}
-                </p>
-              </div>
-              <a href="#solusi" class="btn btn-outline d-flex justify-content-center align-items-center w-100">
-                Cek Solusi
-              </a>
-            </div>
-          </div>
-          <div class="mx-auto card-item position-relative">
-            <div class="card-item-outline bg-white d-flex flex-column position-relative overflow-hidden h-100">
-              <h2 class="price-title">Butuh Konsultasi</h2>
-              <h2 class="price-value d-flex align-items-center">
-                <span>61 - 100</span>
-                <span class="price-duration">point</span>
-              </h2>
-              <p class="price-caption">
-                Anda termasuk dalam kategori ini<br />
-                Tanda - tandanya seperti dibawah ini :
-              </p>
-              <div class="price-list">
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_a}}
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_b}}
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_c}}
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_d}}
-                </p>
-                <p class="d-flex align-items-center check">
-                  <span class="span-icon d-inline-flex align-items-center justify-content-center flex-shrink-0">
-                    <img class="img-fluid"
-                      src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
-                      alt="" /> </span>{{$solusi->gejala_e}}
-                </p>
-              </div>
-              <a href="#solusi" class="btn btn-outline d-flex justify-content-center align-items-center w-100">
-                Cek Solusi
-              </a>
-            </div>
-          </div>
           </div>
           @endforeach
+          </div>
         </div>
       </div>
     </div>
     </section>
 
-    
-    @foreach ($body as $solusi)  
+    @foreach ($solusi as $solusi)  
     <div id="solusi" class="accordion">
     <div class="image-box">
       <!--<img src="images/mainImg.png" alt="Accordion Image">-->
@@ -308,8 +182,9 @@
     </div>
   </section>
 
+  <!-- Footer -->
   @include('partials.footer')
-  
+
   <script>
     let li = document.querySelectorAll(".faq-text li");
     for (var i = 0; i < li.length; i++) {
@@ -324,7 +199,6 @@
       });
     }
   </script>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>

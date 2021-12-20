@@ -31,11 +31,6 @@
                     <span class="post-date">{{ $blog->created_at }}</span>
                 </div>
             </div>
-            {{-- <div class="cs-post-option-panel mt-4">
-                <div class="rich-editor-text">
-                    <p>{{ $blog->content }}</p>
-                </div>
-            </div> --}}
             {!! $blog->content !!}
            
         </div>

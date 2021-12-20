@@ -137,6 +137,7 @@ class DetailSoalController extends Controller
                 ]);
         }
     }
+    
     public function addSoal(){
         return view('soal.create');
     }

@@ -11,7 +11,7 @@
  Target Server Version : 100414
  File Encoding         : 65001
 
- Date: 21/12/2021 15:49:17
+ Date: 21/12/2021 16:18:15
 */
 
 SET NAMES utf8mb4;
@@ -321,27 +321,27 @@ CREATE TABLE `solusi`  (
 -- ----------------------------
 -- Records of solusi
 -- ----------------------------
-INSERT INTO `solusi` VALUES (1, '1', 'Baik-baik saja', '0-30');
-INSERT INTO `solusi` VALUES (2, '1', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (3, '1', 'Menderita', '61-100');
-INSERT INTO `solusi` VALUES (4, '2', 'Baik-baik saja', '0-30');
-INSERT INTO `solusi` VALUES (5, '2', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (6, '2', 'Menderita', '61-100');
-INSERT INTO `solusi` VALUES (7, '3', 'Baik-baik saja', '0-30');
-INSERT INTO `solusi` VALUES (8, '3', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (9, '3', 'Menderita', '61-100');
-INSERT INTO `solusi` VALUES (10, '4', 'Baik-baik saja', '0-30');
-INSERT INTO `solusi` VALUES (11, '4', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (12, '4', 'Menderita', '61-100');
-INSERT INTO `solusi` VALUES (13, '5', 'Baik-baik saja', '0-30');
-INSERT INTO `solusi` VALUES (14, '5', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (15, '5', 'Menderita', '61-100');
-INSERT INTO `solusi` VALUES (16, '6', 'Baik-baik saja', '0-30');
-INSERT INTO `solusi` VALUES (17, '6', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (18, '6', 'Menderita', '61-100');
-INSERT INTO `solusi` VALUES (19, '7', 'Baik-baik saja', '0-30');
-INSERT INTO `solusi` VALUES (20, '7', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (21, '7', 'Menderita', '61-100');
+INSERT INTO `solusi` VALUES (1, '1', 'Baik-Baik Saja', '0-30');
+INSERT INTO `solusi` VALUES (2, '1', 'Bisa Teratasi', '31-60');
+INSERT INTO `solusi` VALUES (3, '1', 'Butuh Konsultasi', '61-100');
+INSERT INTO `solusi` VALUES (4, '2', 'Baik-Baik Saja', '0-30');
+INSERT INTO `solusi` VALUES (5, '2', 'Bisa Teratasi', '31-60');
+INSERT INTO `solusi` VALUES (6, '2', 'Butuh Konsultasi', '61-100');
+INSERT INTO `solusi` VALUES (7, '3', 'Baik-Baik Saja', '0-30');
+INSERT INTO `solusi` VALUES (8, '3', 'Bisa Teratasi', '31-60');
+INSERT INTO `solusi` VALUES (9, '3', 'Butuh Konsultasi', '61-100');
+INSERT INTO `solusi` VALUES (10, '4', 'Baik-Baik Saja', '0-30');
+INSERT INTO `solusi` VALUES (11, '4', 'Bisa Teratasi', '31-60');
+INSERT INTO `solusi` VALUES (12, '4', 'Butuh Konsultasi', '61-100');
+INSERT INTO `solusi` VALUES (13, '5', 'Baik-Baik Saja', '0-30');
+INSERT INTO `solusi` VALUES (14, '5', 'Bisa Teratasi', '31-60');
+INSERT INTO `solusi` VALUES (15, '5', 'Butuh Konsultasi', '61-100');
+INSERT INTO `solusi` VALUES (16, '6', 'Baik-Baik Saja', '0-30');
+INSERT INTO `solusi` VALUES (17, '6', 'Bisa Teratasi', '31-60');
+INSERT INTO `solusi` VALUES (18, '6', 'Butuh Konsultasi', '61-100');
+INSERT INTO `solusi` VALUES (19, '7', 'Baik-Baik Saja', '0-30');
+INSERT INTO `solusi` VALUES (20, '7', 'Bisa Teratasi', '31-60');
+INSERT INTO `solusi` VALUES (21, '7', 'Butuh Konsultasi', '61-100');
 
 -- ----------------------------
 -- Table structure for solusii

@@ -40,6 +40,7 @@
                                     <th scope="col">No</th>
                                     <th scope="col">Kategori</th>
                                     <th scope="col">Deskipsi</th>
+                                    <th scope="col">Solusi</th>
                                     <th scope="col">Soal</th>
                                     <th scope="col">Created At</th>
                                     <th scope="col">Action</th>
@@ -52,6 +53,10 @@
                                     <td>{{ $i++ }}</td>
                                     <td>{{ $category->nama }}</td>
                                     <td>{{ $category->deskripsi }}</td>
+                                    <td>
+                                        <a href="{{ url('/detail-solusi/'.$category->id_category)}}" 
+                                            class="btn btn-sm btn-primary">View Solusi</a>
+                                    </td>
                                     <td>
                                         <a href="{{ url('/detail-soal/'.$category->id_category)}}" 
                                             class="btn btn-sm btn-primary">View Soal</a>

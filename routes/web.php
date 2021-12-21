@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ResultController;
+use App\Http\Controllers\SolusiController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DetailBlogController;
 use App\Http\Controllers\DetailSoalController;
@@ -56,3 +57,7 @@ Route::resource('categories', CategoryController::class);
 Route::get('/detail-soal/{id_category}', [DetailSoalController::class, '__invoke']);
 
 Route::resource('soals', DetailSoalController::class);
+
+Route::get('/detail-solusi/{id_category}', [SolusiController::class, 'edit']);
+
+Route::resource('solusi', SolusiController::class);

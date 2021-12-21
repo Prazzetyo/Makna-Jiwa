@@ -11,7 +11,7 @@
  Target Server Version : 100414
  File Encoding         : 65001
 
- Date: 21/12/2021 12:58:57
+ Date: 21/12/2021 15:49:17
 */
 
 SET NAMES utf8mb4;
@@ -190,7 +190,7 @@ CREATE TABLE `soal`  (
   `created_at` timestamp(0) NULL DEFAULT NULL,
   `updated_at` timestamp(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 61 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 140 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of soal
@@ -226,16 +226,85 @@ INSERT INTO `soal` VALUES (29, '2', 'Saya telah kehilangan banyak berat badan\r\
 INSERT INTO `soal` VALUES (30, '2', 'Saya sangat prihatin, bahkan sibuk, dengan kesehatan fisik saya\r\n\r\n', 'Sangat tidak setuju', 'Tidak setuju', 'Agak setuju', 'Setuju', 'Sangat setuju', NULL, NULL);
 INSERT INTO `soal` VALUES (31, '2', 'Saya sama sekali tidak tertarik dengan hubungan seksual\r\n\r\n', 'Sangat tidak setuju', 'Tidak setuju', 'Agak setuju', 'Setuju', 'Sangat setuju', NULL, NULL);
 INSERT INTO `soal` VALUES (32, '2', 'Saya telah berpikir untuk mengakhiri hidup saya\r\n\r\n', 'Sangat tidak setuju', 'Tidak setuju', 'Agak setuju', 'Setuju', 'Sangat setuju', NULL, NULL);
-INSERT INTO `soal` VALUES (36, '4', 'Tes', 'Tidak pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat sering', NULL, NULL);
-INSERT INTO `soal` VALUES (37, '4', 'Tes 2', 'Tidak pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat sering', NULL, NULL);
-INSERT INTO `soal` VALUES (42, '5', 'Apakah kamu cinta dia?', 'Sangat tidak setuju', 'Tidak setuju', 'Agak setuju', 'Setuju', 'Sangat setuju', NULL, NULL);
-INSERT INTO `soal` VALUES (43, '6', 'Di jatuh cinta ke orang lain?', 'Sangat tidak setuju', 'Tidak setuju', 'Agak setuju', 'Setuju', 'Sangat setuju', NULL, NULL);
-INSERT INTO `soal` VALUES (48, '7', 'Ini Tes', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-15 08:57:20', '2021-12-15 08:57:20');
-INSERT INTO `soal` VALUES (51, '7', 'Dwi', 'Sangat tidak setuju', 'Tidak setuju', 'Agak setuju', 'Setuju', 'Sangat setuju', '2021-12-15 09:03:05', '2021-12-15 09:03:05');
-INSERT INTO `soal` VALUES (56, '7', 'Apakah kamu ADHD', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-15 09:41:05', '2021-12-15 09:41:05');
-INSERT INTO `soal` VALUES (57, '7', 'Apakah kamu dapat menyelesaikan tesnya?', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-16 06:19:19', '2021-12-16 06:19:19');
-INSERT INTO `soal` VALUES (58, '3', 'Apakah kamu dapat menyelesaikan tesnya?', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-20 14:09:33', '2021-12-20 14:09:33');
-INSERT INTO `soal` VALUES (59, '3', 'Apakah kamu stres?', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-20 14:09:53', '2021-12-20 14:10:13');
+INSERT INTO `soal` VALUES (61, '3', 'Saya mendapati diri saya kesal dengan hal-hal yang cukup sepele', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:45:33', '2021-12-21 06:45:33');
+INSERT INTO `soal` VALUES (62, '3', 'Saya telah menyadari kekeringan pada mulut saya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:45:47', '2021-12-21 06:45:47');
+INSERT INTO `soal` VALUES (63, '3', 'Saya telah mengalami kesulitan bernafas', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:46:01', '2021-12-21 06:46:01');
+INSERT INTO `soal` VALUES (64, '3', 'Saya cenderung bereaksi berlebihan terhadap situasi', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:46:16', '2021-12-21 06:46:16');
+INSERT INTO `soal` VALUES (65, '3', 'Saya merasa gemetar – seperti kaki saya akan menyerah', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:46:26', '2021-12-21 06:46:26');
+INSERT INTO `soal` VALUES (66, '3', 'Saya mendapati diri saya mudah marah', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:46:35', '2021-12-21 06:46:35');
+INSERT INTO `soal` VALUES (67, '3', 'Saya mendapati diri saya menjadi tidak sabar ketika saya telah tertunda dengan cara apa pun', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:46:49', '2021-12-21 06:46:49');
+INSERT INTO `soal` VALUES (68, '3', 'Saya pernah mengalami telapak tangan berkeringat atau berkeringat tanpa alasan fisik', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:47:01', '2021-12-21 06:47:01');
+INSERT INTO `soal` VALUES (69, '3', 'Saya merasa takut atau gugup tanpa alasan yang jelas', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:47:17', '2021-12-21 06:47:17');
+INSERT INTO `soal` VALUES (70, '3', 'Saya telah menyadari detak jantung saya, bahkan ketika saya tidak berolahraga', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:47:29', '2021-12-21 06:47:29');
+INSERT INTO `soal` VALUES (71, '3', 'Saya sangat mudah tersinggung', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:47:43', '2021-12-21 06:47:43');
+INSERT INTO `soal` VALUES (72, '3', 'Saya sudah hampir panik', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:47:53', '2021-12-21 06:47:53');
+INSERT INTO `soal` VALUES (73, '3', 'Saya merasa sulit untuk tenang setelah ada sesuatu yang membuat saya kesal', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:48:05', '2021-12-21 06:48:05');
+INSERT INTO `soal` VALUES (74, '3', 'Sulit bagi saya untuk mentolerir gangguan pada apa yang saya lakukan', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:48:19', '2021-12-21 06:48:19');
+INSERT INTO `soal` VALUES (75, '3', 'Saya merasakan ketegangan saraf – seperti gelisah sepanjang waktu', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:48:31', '2021-12-21 06:48:31');
+INSERT INTO `soal` VALUES (76, '3', 'Saya khawatir saya akan panik dan membodohi diri sendiri', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:48:46', '2021-12-21 06:48:46');
+INSERT INTO `soal` VALUES (77, '4', 'Terkadang saya jauh lebih banyak bicara daripada di waktu lain', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:58:35', '2021-12-21 06:58:35');
+INSERT INTO `soal` VALUES (78, '4', 'Saya memiliki periode di mana saya merasa kabel atau hiper dan saya sangat aktif', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:58:45', '2021-12-21 06:58:45');
+INSERT INTO `soal` VALUES (79, '4', 'Saya memiliki periode di mana saya merasa sangat mudah tersinggung atau dipercepat', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:59:13', '2021-12-21 06:59:13');
+INSERT INTO `soal` VALUES (80, '4', 'Saya memiliki saat-saat di mana saya merasa tertekan dan gembira pada saat yang sama', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:59:21', '2021-12-21 06:59:21');
+INSERT INTO `soal` VALUES (81, '4', 'Ada banyak variasi dalam kuantitas dan kualitas pekerjaan saya tergantung pada suasana hati saya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:59:29', '2021-12-21 06:59:29');
+INSERT INTO `soal` VALUES (82, '4', 'Saya memiliki periode di mana saya sering menangis dan kemudian di lain waktu saya merasa sangat bahagia dan bercanda atau tertawa berlebihan', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:59:40', '2021-12-21 06:59:40');
+INSERT INTO `soal` VALUES (83, '4', 'Saya memiliki saat-saat di mana saya merasa sangat optimis tentang hidup dan saat-saat lain di mana saya merasa tidak ada harapan', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 06:59:50', '2021-12-21 06:59:50');
+INSERT INTO `soal` VALUES (84, '4', 'Ada saat-saat di mana saya lebih tertarik pada seks daripada di waktu lain', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:00:01', '2021-12-21 07:00:01');
+INSERT INTO `soal` VALUES (85, '4', 'Terkadang saya merasa sangat marah dan bermusuhan', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:00:08', '2021-12-21 07:00:08');
+INSERT INTO `soal` VALUES (86, '4', 'Saya memiliki periode kebodohan mental dan periode lain dari pemikiran yang sangat kreatif', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:00:16', '2021-12-21 07:00:16');
+INSERT INTO `soal` VALUES (87, '4', 'Terkadang saya sangat mudah bergaul dan di lain waktu saya hanya ingin dibiarkan sendiri', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:00:26', '2021-12-21 07:00:26');
+INSERT INTO `soal` VALUES (88, '5', 'Pengingat apa pun membawa kembali perasaan tentang acara tersebut', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:02:29', '2021-12-21 07:02:29');
+INSERT INTO `soal` VALUES (89, '5', 'Saya mengalami kesulitan untuk tetap tidur', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:02:41', '2021-12-21 07:02:41');
+INSERT INTO `soal` VALUES (90, '5', 'Hal-hal lain terus membuatku memikirkannya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:02:52', '2021-12-21 07:02:52');
+INSERT INTO `soal` VALUES (91, '5', 'Saya merasa kesal dan marah', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:03:04', '2021-12-21 07:03:04');
+INSERT INTO `soal` VALUES (92, '5', 'Saya menghindari membiarkan diri saya marah ketika saya memikirkannya atau diingatkan tentang itu', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:03:14', '2021-12-21 07:03:14');
+INSERT INTO `soal` VALUES (93, '5', 'Saya memikirkan acara itu ketika saya tidak bermaksud', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:03:23', '2021-12-21 07:03:23');
+INSERT INTO `soal` VALUES (94, '5', 'Saya merasa seolah-olah peristiwa itu tidak terjadi atau tidak nyata', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:03:31', '2021-12-21 07:03:31');
+INSERT INTO `soal` VALUES (95, '5', 'Saya telah menjauh dari pengingat tentang situasinya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:03:50', '2021-12-21 07:03:50');
+INSERT INTO `soal` VALUES (96, '5', 'Gambar dan gambar acara muncul di benak saya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:04:02', '2021-12-21 07:04:02');
+INSERT INTO `soal` VALUES (97, '5', 'Saya menjadi gelisah dan mudah terkejut', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:04:09', '2021-12-21 07:04:09');
+INSERT INTO `soal` VALUES (98, '5', 'Saya telah mencoba untuk tidak memikirkan situasinya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:04:21', '2021-12-21 07:04:21');
+INSERT INTO `soal` VALUES (99, '5', 'Saya sadar saya memiliki banyak perasaan tentang apa yang terjadi tetapi saya belum mengatasinya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:04:35', '2021-12-21 07:04:35');
+INSERT INTO `soal` VALUES (100, '5', 'Saya merasa cukup \'mati rasa\' tentang situasinya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:04:46', '2021-12-21 07:04:46');
+INSERT INTO `soal` VALUES (101, '5', 'Saya telah menemukan diri saya bertindak / merasa seperti saya kembali pada saat acara', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:04:58', '2021-12-21 07:04:58');
+INSERT INTO `soal` VALUES (102, '5', 'Saya mengalami kesulitan tidur', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:05:07', '2021-12-21 07:05:07');
+INSERT INTO `soal` VALUES (103, '5', 'Saya mengalami gelombang perasaan yang kuat tentang situasi', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:05:18', '2021-12-21 07:05:18');
+INSERT INTO `soal` VALUES (104, '5', 'Saya telah mencoba untuk menghapus situasi dari ingatan saya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:05:29', '2021-12-21 07:05:29');
+INSERT INTO `soal` VALUES (105, '5', 'Saya kesulitan berkonsentrasi pada hal-hal yang harus saya lakukan', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:05:41', '2021-12-21 07:05:41');
+INSERT INTO `soal` VALUES (106, '5', 'Mengingat kejadian tersebut membuat saya mengalami reaksi fisik seperti berkeringat, jantung berdebar, serangan panik', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:05:50', '2021-12-21 07:05:50');
+INSERT INTO `soal` VALUES (107, '5', 'Saya memiliki mimpi tentang situasi', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:06:04', '2021-12-21 07:06:04');
+INSERT INTO `soal` VALUES (108, '5', 'Saya merasa waspada dan berjuang untuk bersantai', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:06:20', '2021-12-21 07:06:20');
+INSERT INTO `soal` VALUES (109, '5', 'Saya mencoba untuk tidak membicarakan situasinya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 07:06:33', '2021-12-21 07:06:33');
+INSERT INTO `soal` VALUES (110, '6', 'Saya telah menyimpan begitu banyak hal yang mereka dapatkan di jalan.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:38:41', '2021-12-21 08:38:41');
+INSERT INTO `soal` VALUES (111, '6', 'Saya memeriksa hal-hal lebih sering daripada yang diperlukan.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:38:50', '2021-12-21 08:38:50');
+INSERT INTO `soal` VALUES (112, '6', 'Saya marah jika objek tidak diatur dengan benar.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:38:58', '2021-12-21 08:38:58');
+INSERT INTO `soal` VALUES (113, '6', 'Saya merasa terdorong untuk menghitung saat saya melakukan sesuatu.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:39:12', '2021-12-21 08:39:12');
+INSERT INTO `soal` VALUES (114, '6', 'Saya merasa sulit untuk menyentuh suatu objek ketika saya tahu itu telah disentuh oleh orang asing atau orang tertentu.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:39:21', '2021-12-21 08:39:21');
+INSERT INTO `soal` VALUES (115, '6', 'Saya merasa sulit untuk mengendalikan pikiran saya sendiri.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:39:31', '2021-12-21 08:39:31');
+INSERT INTO `soal` VALUES (116, '6', 'Saya mengumpulkan barang-barang yang tidak saya butuhkan.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:39:41', '2021-12-21 08:39:41');
+INSERT INTO `soal` VALUES (117, '6', 'Saya berulang kali memeriksa pintu, jendela, laci, dll.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:39:50', '2021-12-21 08:39:50');
+INSERT INTO `soal` VALUES (118, '6', 'Saya marah jika orang lain mengubah cara saya mengatur sesuatu.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:40:00', '2021-12-21 08:40:00');
+INSERT INTO `soal` VALUES (119, '6', 'Saya merasa harus mengulang angka-angka tertentu.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:40:12', '2021-12-21 08:40:12');
+INSERT INTO `soal` VALUES (120, '6', 'Kadang-kadang saya harus mencuci atau membersihkan diri hanya karena saya merasa terkontaminasi.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:40:22', '2021-12-21 08:40:22');
+INSERT INTO `soal` VALUES (121, '6', 'Saya kesal dengan pikiran tidak menyenangkan yang muncul di benak saya di luar keinginan saya.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:40:35', '2021-12-21 08:40:35');
+INSERT INTO `soal` VALUES (122, '6', 'Saya menghindari membuang barang karena saya takut saya membutuhkannya nanti', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:40:46', '2021-12-21 08:40:46');
+INSERT INTO `soal` VALUES (123, '6', 'Saya berulang kali memeriksa keran gas dan air serta sakelar lampu setelah mematikannya.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:40:57', '2021-12-21 08:40:57');
+INSERT INTO `soal` VALUES (124, '6', 'Saya perlu hal-hal untuk diatur dengan cara tertentu.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:41:09', '2021-12-21 08:41:09');
+INSERT INTO `soal` VALUES (125, '6', 'Saya merasa ada angka yang baik dan buruk', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:41:21', '2021-12-21 08:41:21');
+INSERT INTO `soal` VALUES (126, '6', 'Saya mencuci tangan lebih sering dan lebih lama dari yang diperlukan.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:41:36', '2021-12-21 08:41:36');
+INSERT INTO `soal` VALUES (127, '6', 'Saya sering mendapat pikiran buruk dan sulit untuk menghilangkannya.', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:41:47', '2021-12-21 08:41:47');
+INSERT INTO `soal` VALUES (128, '7', 'Saya merasa sulit menyelesaikan tugas atau proyek', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:45:45', '2021-12-21 08:45:45');
+INSERT INTO `soal` VALUES (129, '7', 'Saya merasa sulit untuk mengatur diri sendiri atau tugas', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:45:56', '2021-12-21 08:45:56');
+INSERT INTO `soal` VALUES (130, '7', 'Saya merasa sulit untuk mengingat janji', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:46:05', '2021-12-21 08:46:05');
+INSERT INTO `soal` VALUES (131, '7', 'Jika tugas atau proyek membutuhkan banyak pemikiran, saya akan sering menunda untuk memulainya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:46:13', '2021-12-21 08:46:13');
+INSERT INTO `soal` VALUES (132, '7', 'Saya merasa sulit untuk duduk diam dan sering gelisah atau menggeliat', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:46:22', '2021-12-21 08:46:22');
+INSERT INTO `soal` VALUES (133, '7', 'Saya akan menggambarkan diri saya sebagai \'on the go\' dan merasa terdorong untuk melakukan sesuatu, seolah-olah didorong oleh motor\'', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:46:32', '2021-12-21 08:46:32');
+INSERT INTO `soal` VALUES (134, '7', 'Saya merasa sulit untuk tetap fokus dalam pengaturan grup', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:46:41', '2021-12-21 08:46:41');
+INSERT INTO `soal` VALUES (135, '7', 'Pikiran saya terasa sangat kacau dan sulit bagi saya untuk berkonsentrasi pada satu hal pada satu waktu', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:46:51', '2021-12-21 08:46:51');
+INSERT INTO `soal` VALUES (136, '7', 'Saya membuat keputusan dengan cepat dan gagal memikirkan konsekuensinya', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:47:03', '2021-12-21 08:47:03');
+INSERT INTO `soal` VALUES (137, '7', 'Saya sering mudah tersinggung, dengan sumbu pendek', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:47:17', '2021-12-21 08:47:17');
+INSERT INTO `soal` VALUES (138, '7', 'Saya mengalami perubahan suasana hati, terkadang merasa cukup tinggi, terkadang rendah', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:47:29', '2021-12-21 08:47:29');
+INSERT INTO `soal` VALUES (139, '7', 'Saya sering melewatkan apa yang dikatakan kepada saya dalam percakapan', 'Tidak Pernah', 'Pernah', 'Kadang-kadang', 'Sering', 'Sangat Sering', '2021-12-21 08:47:42', '2021-12-21 08:47:42');
 
 -- ----------------------------
 -- Table structure for solusi
@@ -252,27 +321,27 @@ CREATE TABLE `solusi`  (
 -- ----------------------------
 -- Records of solusi
 -- ----------------------------
-INSERT INTO `solusi` VALUES (1, '1', 'Menderita', '0-30');
+INSERT INTO `solusi` VALUES (1, '1', 'Baik-baik saja', '0-30');
 INSERT INTO `solusi` VALUES (2, '1', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (3, '1', 'Baik-baik saja', '61-100');
-INSERT INTO `solusi` VALUES (4, '2', 'Menderita', '0-30');
+INSERT INTO `solusi` VALUES (3, '1', 'Menderita', '61-100');
+INSERT INTO `solusi` VALUES (4, '2', 'Baik-baik saja', '0-30');
 INSERT INTO `solusi` VALUES (5, '2', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (6, '2', 'Baik-baik saja', '61-100');
-INSERT INTO `solusi` VALUES (7, '3', 'Menderita', '0-30');
+INSERT INTO `solusi` VALUES (6, '2', 'Menderita', '61-100');
+INSERT INTO `solusi` VALUES (7, '3', 'Baik-baik saja', '0-30');
 INSERT INTO `solusi` VALUES (8, '3', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (9, '3', 'Baik-baik saja', '61-100');
-INSERT INTO `solusi` VALUES (10, '4', 'Menderita', '0-30');
+INSERT INTO `solusi` VALUES (9, '3', 'Menderita', '61-100');
+INSERT INTO `solusi` VALUES (10, '4', 'Baik-baik saja', '0-30');
 INSERT INTO `solusi` VALUES (11, '4', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (12, '4', 'Baik-baik saja', '61-100');
-INSERT INTO `solusi` VALUES (13, '5', 'Menderita', '0-30');
+INSERT INTO `solusi` VALUES (12, '4', 'Menderita', '61-100');
+INSERT INTO `solusi` VALUES (13, '5', 'Baik-baik saja', '0-30');
 INSERT INTO `solusi` VALUES (14, '5', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (15, '5', 'Baik-baik saja', '61-100');
-INSERT INTO `solusi` VALUES (16, '6', 'Menderita', '0-30');
+INSERT INTO `solusi` VALUES (15, '5', 'Menderita', '61-100');
+INSERT INTO `solusi` VALUES (16, '6', 'Baik-baik saja', '0-30');
 INSERT INTO `solusi` VALUES (17, '6', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (18, '6', 'Baik-baik saja', '61-100');
-INSERT INTO `solusi` VALUES (19, '7', 'Menderita', '0-30');
+INSERT INTO `solusi` VALUES (18, '6', 'Menderita', '61-100');
+INSERT INTO `solusi` VALUES (19, '7', 'Baik-baik saja', '0-30');
 INSERT INTO `solusi` VALUES (20, '7', 'Sedang', '31-60');
-INSERT INTO `solusi` VALUES (21, '7', 'Baik-baik saja', '61-100');
+INSERT INTO `solusi` VALUES (21, '7', 'Menderita', '61-100');
 
 -- ----------------------------
 -- Table structure for solusii
@@ -388,9 +457,9 @@ FROM
 DROP TRIGGER IF EXISTS `Insert Category`;
 delimiter ;;
 CREATE TRIGGER `Insert Category` AFTER INSERT ON `categories` FOR EACH ROW BEGIN
-	INSERT INTO solusi (id_kategori, solusi, hasil) VALUES(new.id_category, 'Menderita', '0-30');
+	INSERT INTO solusi (id_kategori, solusi, hasil) VALUES(new.id_category, 'Baik-baik saja', '0-30');
 	INSERT INTO solusi (id_kategori, solusi, hasil) VALUES(new.id_category, 'Sedang', '31-60');
-	INSERT INTO solusi (id_kategori, solusi, hasil) VALUES(new.id_category, 'Baik-baik saja', '61-100');
+	INSERT INTO solusi (id_kategori, solusi, hasil) VALUES(new.id_category, 'Menderita', '61-100');
 	INSERT INTO solusii (id_kategori, kategori) VALUES(new.id_category, new.nama);
 END
 ;;

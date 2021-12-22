@@ -221,7 +221,7 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="">
 							<div class="list-space">
-								<img src="./img/logo-footer-1.png"
+								<img src="{{asset('img/logo-footer-1.png')}}"
 									alt="" />
 							</div>
 						</div>
@@ -232,7 +232,7 @@
             Makna Jiwa adalah sebuah platfom kesehatan mental yang bertujuan memberikan edukasi serta meningkatkan kesadaran akan kesehatan mental di kalangan mahasiswa.
             </p>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-2 col-md-6">
           <h2 class="footer-text-title">LAYANAN</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
@@ -249,10 +249,27 @@
 							</li>
 						</nav>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-2 col-md-6">
 						<h2 class="footer-text-title">DIDUKUNG OLEH</h2>
-            <img src="./img/dicoding.png" alt="" class="supported">
-						<img src="./img/MASTER.png" alt="" class="supported">
+            <img src="{{asset('img/dicoding.png')}}" alt="" class="supported">
+						<img src="{{ asset('img/MASTER.png')}}" alt="" class="supported">
+					</div>
+          <div class="col-lg-2 col-md-6">
+						<h2 class="footer-text-title">CREDIT BY</h2>
+            <nav class="list-unstyled">
+							<li class="list-space">
+								<a class="list-menu">Buildwithangga.com</a>
+							</li>
+							<li class="list-space">
+								<a class="list-menu">Codinglabweb.com</a>
+							</li>
+							<li class="list-space">
+								<a class="list-menu">Opendoodles.com</a>
+							</li>
+							<li class="list-space">
+								<a class="list-menu">Alodokter.com</a>
+							</li>
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -339,8 +356,7 @@
 					</nav>
 				</div>
 			</div>
-		</div>
-	</section> 
+		</div> 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
   </html>

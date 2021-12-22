@@ -26,42 +26,42 @@
     <ul class="faq-text">
       <li>
         <div class="question-arrow">
-          <span class="question">What do you mean by HTML & CSS?</span>
+          <span class="question">Apa yang saya lakukan jika menurut saya kondisi memburuk?</span>
           <i class="bx bxs-chevron-down arrow"></i>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+        <p>Coba lah membuka diri dan menenangkan pikiran.<br> segera pergi konsultasi ke mentor yang profesional.</p>
         <span class="line"></span>
       </li>
       <li>
         <div class="question-arrow">
-          <span class="question">What do you mean by JavaScript?</span>
+          <span class="question">Jika keadaan saya mengancam kehidupan saya, Apa yang harus saya lakukan?</span>
           <i class="bx bxs-chevron-down arrow"></i>
         </div>
-        <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive</p>
+        <p>Layanan ini tidak direkomendasikan.<br> Silahkan menghubungi <span style="font-weight: bold; color: red;">119<span>.</p>
         <span class="line"></span>
       </li>
       <li>
         <div class="question-arrow">
-          <span class="question">From where you learned HTML & CSS?</span>
+          <span class="question">Bagaimana cara mengikuti tes?</span>
           <i class="bx bxs-chevron-down arrow"></i>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus.</p>
+        <p>Anda bisa menuju halaman utama, tuju ke halaman paling bawah untuk membaca panduan tes.</p>
         <span class="line"></span>
       </li>
       <li>
         <div class="question-arrow">
-          <span class="question">Which code editor do you use?</span>
+          <span class="question">Apa saya yang bisa saya lakukan di website ini?</span>
           <i class="bx bxs-chevron-down arrow"></i>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, labore.</p>
+        <p>Di website ini ada beberapa fitur awal seperti mengikuti tes diagnosa, membaca artikel terbaru tentang kesehatan mental, dan musik relaksasi di halaman utama.</p>
         <span class="line"></span>
       </li>
       <li>
         <div class="question-arrow">
-          <span class="question">Software you use for video editing?</span>
+          <span class="question">Metode apa yang digunakan untuk mendiagnosa?</span>
           <i class="bx bxs-chevron-down arrow"></i>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repudiandae!</p>
+        <p>Sementara ini kami menggunakan metode forward chaining dengan rata - rata nilai pada jawaban dengan beberapa kategori yang umum.</p>
         <span class="line"></span>
       </li>
     </ul>

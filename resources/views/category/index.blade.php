@@ -32,7 +32,7 @@
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
                         <a href="{{ route('categories.create') }}" class="btn btn-md btn-success mb-3 float-right">New
-                            Post</a>
+                            Category</a>
 
                         <table class="table table-bordered mt-1">
                             <thead>

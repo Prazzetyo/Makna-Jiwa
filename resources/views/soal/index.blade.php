@@ -31,7 +31,7 @@
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
                         <a value="{{ $idd }}" href="{{ route('soals.create', ['id'=>$idd]) }}" class="btn btn-md btn-success mb-3 float-right">New
-                            Post</a>
+                            Question</a>
                         <a href="{{ route('categories.index') }}">Back to Categories</a>
 
                         <table class="table table-bordered mt-1">
